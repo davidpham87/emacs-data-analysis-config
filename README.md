@@ -1,24 +1,31 @@
 # Emacs config for data analysis
 
-Taking the excellente emacs-live base, I set my own preferences to the emacs editor and here are the configuration files.
+This is a fork of emacs-live for data analysis and probably Swiss
+keyboard. Taking the excellente emacs-live base, I set my own preferences to the
+emacs editor and here are the configuration files.
 
 The modularity of emacs-live should be appreciated here.
 
 ## Why this repository?
 
-R, Python and LaTeX are not in the emacs-live packages and I used my own *.emacs* configuration to enhance it. This mainly serves as a way to make a quick and dirty installation of my emacs editors as I have to work on several *linux*-computers (and Windows 7). Feel free to fork and use as you want! 
+R, Python and LaTeX are not in the emacs-live packages and I used my own
+*.emacs* configuration to enhance it. This mainly serves as a way to make a
+quick and dirty installation of my emacs editors as I have to work on several
+*linux*-computers (and Windows 7). Feel free to fork and use as you want!
 
 It also includes some facilities to write markdown document (livedown).
 
 ## Configuration
 
-You need to set the *.emacs-live.el* file in your root folder and overwrite your *.emacs.d* folder with this repository.
+You need to set the *.emacs-live.el* file in your root folder and overwrite your
+*.emacs.d* folder with this repository.
 
 ## French Swiss keyboard
 
 I strongly advise to rebind the keys to your convenience. Most keybindings are
 standard, however, some are specific to french swiss keyboards. You can find
-them in the `packs/swiss-keyboard/` subfolder. I remapped the the `AltGr + key` to `M-key` and also use `C-é` and `M-é` for characater and word
+them in the `packs/swiss-keyboard/` subfolder. I remapped the the `AltGr + key`
+to `M-key` and also use `C-é` and `M-é` for characater and word
 backward-deleting.
 
 ## Some Emacs hints
@@ -49,3 +56,15 @@ in the file
 > packs/emacs-appearance/config/appearance.el
 
 in order to make it work.
+
+## Mirroring update from emacs live
+
+Taking information from
+[github help](https://help.github.com/articles/syncing-a-fork/), you can fire up
+your shell and copy-paste.
+
+```bash 
+git fetch upstream
+git checkout master
+git merge upstream/master
+```
