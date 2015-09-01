@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- livedown:preview
  eshell
  eval-buffer
  package-install
  ielm
  term
  package-list-packages
+ eval-region
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,7 @@
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 119)
+ (eshell . 123)
  (eval-buffer . 38)
  (lisp-mode . 8)
  (load-theme . 11)
@@ -116,4 +116,5 @@
  (js2-mode . 1)
  (livedown:kill . 2)
  (latex-preview-pane-mode . 2)
+ (magit-popup-help . 1)
 )
