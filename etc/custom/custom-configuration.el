@@ -10,6 +10,8 @@
    (vector "#4d4d4c" "#c82829" "#718c00" "#eab700" "#4271ae" "#8959a8" "#3e999f" "#ffffff"))
  '(background-color "#202020")
  '(background-mode dark)
+ '(column-number-mode t)
+ '(cua-mode t nil (cua-base))
  '(cursor-color "#cccccc")
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
@@ -44,7 +46,9 @@
  '(sclang-eval-line-forward nil)
  '(send-mail-function (quote smtpmail-send-it))
  '(setq ess-indent-level t)
+ '(show-paren-mode t)
  '(tab-width 2)
+ '(tool-bar-mode nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
@@ -72,6 +76,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Source Code Pro" :foundry "adobe" :slant normal :weight normal :height 113 :width normal))))
  '(diff-added ((t (:foreground "Green"))))
  '(diff-removed ((t (:foreground "Red"))))
  '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))
