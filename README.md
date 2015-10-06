@@ -42,20 +42,9 @@ backward-deleting.
 + `C-s` and `C-r` are your best friend to jump and look for code. `C-o` from
   emacs-live package is also worth mentioning.
 
-## Windows
+## Font Source Code Pro
 
-You'll have to comment the following line
-
-```lisp
-(when (member "Source Code Pro" (font-family-list))
-  (set-face-attribute 'default nil :font "Source Code Pro-11"))
-```
-
-in the file
-
-> packs/emacs-appearance/config/appearance.el
-
-in order to make it work.
+[Source code pro](https://github.com/adobe-fonts/source-code-pro) is an open-source font from adobe. To install it, download the (source)[https://github.com/adobe-fonts/source-code-pro/releases] and install them. Instruction on (this page)[https://github.com/adobe-fonts/source-code-pro].
 
 ## Mirroring update from emacs live
 

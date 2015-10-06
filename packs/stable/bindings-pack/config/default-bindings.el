@@ -136,7 +136,7 @@
 
 
 ;;browse kill ring (visual paste)
-(global-set-key (kbd "M-y") 'browse-kill-ring)
+;; (global-set-key (kbd "M-y") 'browse-kill-ring)
 
 ;;make C-] and M-] cut and copy respectively
 (global-set-key (kbd "C-]") 'kill-region)

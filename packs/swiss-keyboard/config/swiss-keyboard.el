@@ -42,19 +42,6 @@
   (mapc key-mapper km)
   (mapc key-mapper kmc))
 
-;; (global-set-key (kbd "«") 'yank-pop)
-;; (global-set-key (kbd "»") 'smex)
-;; (global-set-key (kbd "ł") 'kill-ring-save)
-;; (global-set-key (kbd "ŧ") 'transpose-words)
-;; (global-set-key (kbd "¢") 'capitalize-word)
-;; (global-set-key (kbd "æ") 'backward-sentence)
-;; (global-set-key (kbd "€") 'forward-sentence)
-;; (global-set-key (kbd "ð") 'kill-sentence)
-;; (global-set-key (kbd "¶") 'paredit-raise-sexp)
-;; (global-set-key (kbd "đ") 'forward-word)
-;; (global-set-key (kbd "”") 'backward-word)
-;; (global-set-key (kbd "“") 'cua-scroll-down)
-
 ;; Emacs-live rewrite
 (global-set-key (kbd "C-h") 'help-command)
 (define-key org-mode-map (kbd "C-h") 'help-command)
