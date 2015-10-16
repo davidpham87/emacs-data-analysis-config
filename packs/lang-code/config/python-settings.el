@@ -1,7 +1,7 @@
 ;;; Python General configuration these are general config files
 ;;; found online.
 (setq
- python-shell-interpreter "ipython"
+ python-shell-interpreter "ipython3"
  python-shell-interpreter-args "--pylab"
  python-shell-prompt-regexp "In \\[[0-9]+\\]: "
  python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
@@ -32,7 +32,7 @@
 ;; Python Hook, set indent to 4, and pyflakes
 (add-hook 'python-mode-hook
           (lambda ()
-            (setq indent-tabs-mode nil tab-width 4)
+            (setq indent-tabs-mode nil tab-width 4 python-indent-offset 4)
             (flymake-python-pyflakes-load)
             ))
 

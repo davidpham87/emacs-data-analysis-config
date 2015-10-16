@@ -1,30 +1,30 @@
 
 ;; ----- smex-history -----
 (
+ run-python
+ ielm
  eshell
- package-list-packages
- flyspell-mode
- fundamental-mode
  term
  eval-buffer
- ielm
+ package-list-packages
+ help
 )
 
 ;; ----- smex-data -----
 (
  (color-theme-gandalf . 2)
- (package-list-packages . 19)
+ (package-list-packages . 20)
  (color-theme-cyberpunk . 2)
  (menu-bar-mode . 4)
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 183)
- (eval-buffer . 42)
+ (eshell . 196)
+ (eval-buffer . 46)
  (lisp-mode . 8)
  (load-theme . 11)
- (ielm . 29)
- (package-install . 12)
+ (ielm . 34)
+ (package-install . 13)
  (set-background-color . 1)
  (set-cursor-color . 1)
  (forward-sentence . 1)
@@ -39,7 +39,7 @@
  (grep . 1)
  (rgrep . 4)
  (zap-to-char . 3)
- (paredit-mode . 24)
+ (paredit-mode . 27)
  (rainbow-delimiters-mode . 3)
  (info . 10)
  (browse-url . 2)
@@ -60,17 +60,17 @@
  (find-grep-dired . 2)
  (TeX-mode . 1)
  (org-mode . 2)
- (indent-region . 1)
- (jedi-mode . 10)
+ (indent-region . 2)
+ (jedi-mode . 12)
  (org-return . 1)
  (describe-mode . 1)
- (term . 37)
+ (term . 46)
  (rainbow-enable-in-mode . 2)
  (rainbow-mode . 6)
  (global-linum-mode . 1)
  (global-hl-line-mode . 1)
  (make-face . 1)
- (ispell . 15)
+ (ispell . 18)
  (eww . 5)
  (er/mark-text-sentence . 1)
  (mark-end-of-sentence . 1)
@@ -79,9 +79,9 @@
  (ess-swv-toggle-plug-into-AUCTeX . 1)
  (latex-extra-mode . 2)
  (pkg-info-library-version . 1)
- (run-python . 5)
+ (run-python . 6)
  (ess-inside-string-p . 1)
- (flyspell-mode . 8)
+ (flyspell-mode . 11)
  (highlight-regexp . 1)
  (calc . 1)
  (dired-do-find-marked-files . 1)
@@ -92,8 +92,8 @@
  (recover-file . 1)
  (c-mode . 3)
  (doc-view-fit-page-to-window . 1)
- (4clojure-open-question . 9)
- (4clojure-check-answers . 3)
+ (4clojure-open-question . 14)
+ (4clojure-check-answers . 4)
  (pandoc-mode . 1)
  (normal-mode . 2)
  (TeX-tex-mode . 1)
@@ -112,13 +112,16 @@
  (ess-sos . 3)
  (cider-repl-toggle-pretty-printing . 1)
  (company-mode . 1)
- (livedown:preview . 11)
+ (livedown:preview . 13)
  (js2-mode . 2)
- (livedown:kill . 2)
+ (livedown:kill . 3)
  (latex-preview-pane-mode . 2)
  (magit-log . 1)
  (html-mode . 1)
  (magit-gitignore . 1)
  (cider-refresh . 1)
  (calc-log10 . 1)
+ (cider-debug-defun-at-point . 1)
+ (cider-turn-on-eldoc-mode . 1)
+ (term-terminal-menu . 1)
 )
