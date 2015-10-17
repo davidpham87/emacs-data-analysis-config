@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ term
+ package-list-packages
  run-python
  ielm
  eshell
- term
  eval-buffer
- package-list-packages
  help
 )
 
 ;; ----- smex-data -----
 (
  (color-theme-gandalf . 2)
- (package-list-packages . 20)
+ (package-list-packages . 21)
  (color-theme-cyberpunk . 2)
  (menu-bar-mode . 4)
  (eval-region . 13)
@@ -64,7 +64,7 @@
  (jedi-mode . 12)
  (org-return . 1)
  (describe-mode . 1)
- (term . 46)
+ (term . 47)
  (rainbow-enable-in-mode . 2)
  (rainbow-mode . 6)
  (global-linum-mode . 1)

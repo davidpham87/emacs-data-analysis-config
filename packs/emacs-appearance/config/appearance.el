@@ -8,7 +8,7 @@
 
 (add-to-list 'default-frame-alist '(height . 70))
 (add-to-list 'default-frame-alist '(width . 81))
-(setq-default fill-column 80)           ; Automatic width formatting with M-q
+(setq-default fill-column 79)           ; Automatic width formatting with M-q
 
 ;; (defun set-frame-width-interactive (arg)
 ;;   "Interactive version of frame width"
