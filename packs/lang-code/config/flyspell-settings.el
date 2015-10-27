@@ -2,9 +2,8 @@
 (if (eq system-type 'darwin)
     (if (file-executable-p "/usr/local/bin/aspell")
         (progn
-          (setq ispell-program-name "/usr/local/bin/aspell")
-          (setq ispell-extra-args '("-d" "/Library/Application Support/cocoAspell/aspell6-en-6.0-0/en.multi"))
-          )))
+          (setq ispell-program-name "/usr/local/bin/aspell"))
+      ))
 
 ;; easy spell check
 (global-set-key (kbd "<f8>") 'ispell-word)
