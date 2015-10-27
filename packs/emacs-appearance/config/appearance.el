@@ -1,10 +1,7 @@
 ;; Set default font
 (when (member "Source Code Pro" (font-family-list))
-  (add-to-list 'default-frame-alist '(font . "Source Code Pro-11")))
-
-
-;;(set-face-attribute 'default nil :font "Source Code Pro-11" )
-(set-frame-font  "Source Code Pro-11" nil t)
+  (add-to-list 'default-frame-alist '(font . "Source Code Pro-11"))
+  (set-frame-font  "Source Code Pro-11" nil t))
 
 (add-to-list 'default-frame-alist '(height . 70))
 (add-to-list 'default-frame-alist '(width . 81))
