@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ ielm
+ term
  eshell
  ess-help-web-search
  run-python
  set-fill-column
  man
- eww
- pylint
 )
 
 ;; ----- smex-data -----
@@ -19,11 +19,11 @@
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 212)
+ (eshell . 214)
  (eval-buffer . 46)
  (lisp-mode . 8)
  (load-theme . 11)
- (ielm . 34)
+ (ielm . 37)
  (package-install . 14)
  (set-background-color . 1)
  (set-cursor-color . 1)
@@ -64,7 +64,7 @@
  (jedi-mode . 14)
  (org-return . 1)
  (describe-mode . 1)
- (term . 48)
+ (term . 49)
  (rainbow-enable-in-mode . 2)
  (rainbow-mode . 6)
  (global-linum-mode . 1)
