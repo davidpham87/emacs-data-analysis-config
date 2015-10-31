@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  eshell
+ ess-help-web-search
  run-python
  set-fill-column
  man
  eww
  pylint
- term
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,7 @@
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 211)
+ (eshell . 212)
  (eval-buffer . 46)
  (lisp-mode . 8)
  (load-theme . 11)
@@ -128,4 +128,5 @@
  (bibtex-reformat . 1)
  (ispell-buffer . 1)
  (set-fill-column . 3)
+ (ess-help-web-search . 1)
 )

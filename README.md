@@ -1,4 +1,5 @@
 # Emacs config for data analysis
+=======
 
 This is a fork of emacs-live for data analysis and probably Swiss
 keyboard. Taking the excellente emacs-live base, I set my own preferences to the
@@ -30,6 +31,7 @@ backward-deleting.
 
 ## Some Emacs hints
 
+<<<<<<< HEAD
 + Use your two hands for doing the keys using the `Alt` and `Ctrl` keys.
 + For comfort and avoid *emacs pinky* disease: use your palm for hitting the
   `Ctrl` key on a flat keyboard. I use a Logitech K750 solar keyboard which is
