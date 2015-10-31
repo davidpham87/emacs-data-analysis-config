@@ -16,7 +16,7 @@
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
    (quote
-    ("5e524d96026c047aba9b0d33831913cc5dbdb7b53729b6a9b5916781ff5a8d8e" "19352d62ea0395879be564fc36bc0b4780d9768a964d26dfae8aad218062858d" "6d308fe8ff4c9896ac5d4b7f1d7a4661eb90abcbeaeabb19dd9aaefa1d5f8e2b" "a444b2e10bedc64e4c7f312a737271f9a2f2542c67caa13b04d525196562bf38" "f9be6698a3f56f44597db03809e26ddf97d96d074c90a8ea542a363d3edbb430" "44e7c0cf8243738d8360fc6f5a47dcc2870f9ea4cc5ca3f121fe41e8ba8abe95" "277434ab5a625d1c24f23b8962d7e365e52b81f723479ca0389792a62461ba3b" "4ff23437b3166eeb7ca9fa026b2b030bba7c0dfdc1ff94df14dfb1bcaee56c78" "6a9606327ecca6e772fba6ef46137d129e6d1888dcfc65d0b9b27a7a00a4af20" "108b3724e0d684027c713703f663358779cc6544075bc8fd16ae71470497304f" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "0c311fb22e6197daba9123f43da98f273d2bfaeeaeb653007ad1ee77f0003037" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1989847d22966b1403bab8c674354b4a2adf6e03e0ffebe097a6bd8a32be1e19" "e26780280b5248eb9b2d02a237d9941956fc94972443b0f7aeec12b5c15db9f3" default)))
+    ("fc8c4022ba43b18ade57862a581e783d63f80d2fca3256a20bc103715cb0aad7" default)))
  '(doc-view-resolution 300)
  '(ess-R-font-lock-keywords
    (quote
@@ -76,7 +76,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-  '(default ((t (:family "Source Code Pro" :foundry "adobe" :slant normal :weight normal :height 113 :width normal))))
  '(diff-added ((t (:foreground "Green"))))
  '(diff-removed ((t (:foreground "Red"))))
  '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))

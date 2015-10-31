@@ -1,34 +1,34 @@
 
 ;; ----- smex-history -----
 (
- term
- package-list-packages
- run-python
- ielm
  eshell
- eval-buffer
- help
+ run-python
+ set-fill-column
+ man
+ eww
+ pylint
+ term
 )
 
 ;; ----- smex-data -----
 (
  (color-theme-gandalf . 2)
- (package-list-packages . 21)
+ (package-list-packages . 22)
  (color-theme-cyberpunk . 2)
  (menu-bar-mode . 4)
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 196)
+ (eshell . 211)
  (eval-buffer . 46)
  (lisp-mode . 8)
  (load-theme . 11)
  (ielm . 34)
- (package-install . 13)
+ (package-install . 14)
  (set-background-color . 1)
  (set-cursor-color . 1)
  (forward-sentence . 1)
- (r-rmd-render . 72)
+ (r-rmd-render . 76)
  (markdown-mode . 2)
  (poly-markdown+r-mode . 2)
  (org-insert-todo-heading-respect-content . 1)
@@ -47,31 +47,31 @@
  (R-mode . 2)
  (cider-jack-in . 2)
  (ac-quick-help . 1)
- (find-grep . 15)
+ (find-grep . 17)
  (find-file . 8)
- (find-dired . 10)
+ (find-dired . 11)
  (grep-find . 5)
  (ac-complete . 1)
  (auto-complete . 2)
  (auto-complete-mode . 6)
  (ido-mode . 2)
  (mkdir . 4)
- (pylint . 1)
+ (pylint . 6)
  (find-grep-dired . 2)
  (TeX-mode . 1)
  (org-mode . 2)
  (indent-region . 2)
- (jedi-mode . 12)
+ (jedi-mode . 14)
  (org-return . 1)
  (describe-mode . 1)
- (term . 47)
+ (term . 48)
  (rainbow-enable-in-mode . 2)
  (rainbow-mode . 6)
  (global-linum-mode . 1)
  (global-hl-line-mode . 1)
  (make-face . 1)
- (ispell . 18)
- (eww . 5)
+ (ispell . 23)
+ (eww . 6)
  (er/mark-text-sentence . 1)
  (mark-end-of-sentence . 1)
  (mark-defun . 1)
@@ -79,9 +79,9 @@
  (ess-swv-toggle-plug-into-AUCTeX . 1)
  (latex-extra-mode . 2)
  (pkg-info-library-version . 1)
- (run-python . 6)
+ (run-python . 8)
  (ess-inside-string-p . 1)
- (flyspell-mode . 11)
+ (flyspell-mode . 12)
  (highlight-regexp . 1)
  (calc . 1)
  (dired-do-find-marked-files . 1)
@@ -103,10 +103,10 @@
  (set-frame-width-interactive . 27)
  (browse-url-of-buffer . 2)
  (eshell-life-is-too-much . 1)
- (clear-shell . 7)
+ (clear-shell . 16)
  (clojure-mode . 4)
  (ac-cider-setup . 3)
- (man . 5)
+ (man . 6)
  (fundamental-mode . 5)
  (sudo-edit . 5)
  (ess-sos . 3)
@@ -124,4 +124,8 @@
  (cider-debug-defun-at-point . 1)
  (cider-turn-on-eldoc-mode . 1)
  (term-terminal-menu . 1)
+ (bibtex-sort-buffer . 2)
+ (bibtex-reformat . 1)
+ (ispell-buffer . 1)
+ (set-fill-column . 3)
 )
