@@ -16,7 +16,6 @@ custom.el
 elim/
 elpa/4clojure*
 elpa/request*
-elpa/zenburn*
 image-dired/
 loaddefs.el*
 oddmuse/*
