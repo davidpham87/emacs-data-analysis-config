@@ -25,15 +25,12 @@
 
 ;;  Python JEDI
 (add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)                      ; optional
-(setq jedi:complete-on-dot t)                 ; optional
+(setq jedi:setup-keys t)
+(setq jedi:complete-on-dot t)
 
 (require 'flymake-python-pyflakes)
 ;; Python Hook, set indent to 4, and pyflakes
 (add-hook 'python-mode-hook
           (lambda ()
             (setq indent-tabs-mode nil tab-width 4 python-indent-offset 4)
-            (flymake-python-pyflakes-load)
-            ))
-
-;; (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
+            (flymake-python-pyflakes-load)))
