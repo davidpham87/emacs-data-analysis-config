@@ -6,5 +6,5 @@
 ;; Load bindings config
 (mapc 'live-load-config-file
       '("r-settings.el" "python-settings.el" "latex-settings.el"
-        "bindings.el" "lang-code-settings.el" "flyspell-settings.el"
+        "lang-code-settings.el" "flyspell-settings.el"
         "markdown-settings.el"))
