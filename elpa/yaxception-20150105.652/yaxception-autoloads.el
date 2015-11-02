@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("yaxception.el") (21864 47246 527184 500000))
+;;;### (autoloads nil nil ("yaxception.el") (22069 65274 191219 305000))
 
 ;;;***
 
