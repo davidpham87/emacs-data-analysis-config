@@ -1,10 +1,6 @@
 ;; Set default font
-(defun set-source-code-pro-font (&rest frame)
-  "Set Adobe Source Code Pro font if exists"
-  (when (member "Source Code Pro" (font-family-list))
-    (set-frame-font "Source Code Pro-11" nil t)))
-
-(add-hook 'after-make-frame-functions 'set-source-code-pro-font t)
+(when (member "Source Code Pro" (font-family-list))
+  (add-to-list 'default-frame-alist '(font . "Source Code Pro-11")))
 
 (add-to-list 'default-frame-alist '(height . 70))
 (add-to-list 'default-frame-alist '(width . 81))
