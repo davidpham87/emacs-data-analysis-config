@@ -28,3 +28,4 @@ tmp/*
 tramp
 url/
 url/cookies
+*chrome-settings.el

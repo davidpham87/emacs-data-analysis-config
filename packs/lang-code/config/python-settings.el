@@ -28,6 +28,9 @@
 (setq jedi:setup-keys t)
 (setq jedi:complete-on-dot t)
 
+(setq jedi:environment-virtualenv
+      (list "virtualenv3" "--system-site-packages")) ; Python3
+
 (require 'flymake-python-pyflakes)
 ;; Python Hook, set indent to 4, and pyflakes
 (add-hook 'python-mode-hook

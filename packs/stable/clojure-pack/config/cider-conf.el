@@ -27,14 +27,11 @@
 (add-to-list 'same-window-buffer-names "*cider*")
 
 ;;Auto Complete
-(live-add-pack-lib "ac-cider")
-(require 'ac-cider )
+(live-add-pack-lib "company")
+(require 'company)
 
-(add-hook 'cider-mode-hook 'ac-cider-setup)
-(add-hook 'cider-repl-mode-hook 'ac-cider-setup)
-
-(eval-after-load "auto-complete"
-  '(add-to-list 'ac-modes 'cider-mode))
+(add-hook 'cider-mode-hook #'company-mode)
+(add-hook 'cider-repl-mode-hook #'company-mode)
 
 ;; Specify the print length to be 100 to stop infinite sequences killing
 ;; things. This might be dangerous for some people relying on
@@ -46,11 +43,11 @@
 
 (setq nrepl-port "4555")
 
-
 ;; Pull in the awesome clj-refactor lib by magnars
 (live-add-pack-lib "clj-refactor")
 (require 'clj-refactor)
 (add-hook 'clojure-mode-hook (lambda ()
+                               (company-mode t)
                                (clj-refactor-mode 1)
                                (cljr-add-keybindings-with-prefix "C-c C-m")))
 

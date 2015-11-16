@@ -28,7 +28,8 @@
     hc-zenburn-theme                    ; cool color-themes
     zenburn-theme                       ; A low contrast color theme for Emacs.
     rainbow-mode                        ; Colorize color names in buffers
-    rainbow-delimiters                  ; Highlight brackets according to their depth
+    rainbow-delimiters                  ; Highlight parenthesis with their
+                                        ; depth
     )
   "Colors packages to ensure are installed at launch.")
 
@@ -62,20 +63,25 @@
   "Fly packages to checks syntax or spell cheking.")
 
 
-(defvar other-pckgs
+(defvar markup-pckgs
   '(auctex                              ; default LaTeX mode
     latex-extra                         ; some cool features for LaTeX
     haml-mode
-    haskell-mode
-    ess                                 ; require apt-get update/upgrade
     markdown-mode                       ; markdown packages
     markdown-mode+                      ; extra functions for the markdown
+    pandoc-mode                         ; convert from markup language
+    )
+  "A list of package for markup language")
+
+(defvar other-pckgs
+  '(haskell-mode
+    ess                                 ; require apt-get update/upgrade
     multiple-cursors                    ;
     paredit                             ; parenthesis manager
     projectile                          ; manage projects
     polymode                            ; several mode per buffer
-    pandoc-mode                         ; convert from markup language
     buffer-move                         ; swap-windows command for buffer
+    edit-server
     websocket                           ; websocket for markdown-preview
     )
   "A list of packages to ensure are installed at launch.")
@@ -89,8 +95,8 @@
   "Python packages to ensure are installed at launch.")
 
 (defvar my-packages
-  (append ac-pckgs color-pckgs clojure-pckgs elisp-pckgs fly-pckgs other-pckgs
-          python-pckgs)
+  (append ac-pckgs color-pckgs clojure-pckgs elisp-pckgs fly-pckgs
+          markup-pckgs other-pckgs python-pckgs)
   "A list of packages to ensure are installed at launch.")
 
 (defun my-packages-installed-p ()

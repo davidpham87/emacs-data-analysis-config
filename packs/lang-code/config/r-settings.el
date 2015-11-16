@@ -27,11 +27,7 @@
 (defun my-ess-start-R ()
   (interactive)
   (if (not (member "*R*" (mapcar (function buffer-name) (buffer-list))))
-      (progn (let ((f1 (selected-frame)))
-               (select-frame (make-frame '((width . 100)
-                                           (height . 67))))
-               (R)
-               (select-frame f1)))))
+      (R)))
 
 (defun my-ess-eval ()
   (interactive)

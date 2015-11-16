@@ -18,6 +18,7 @@
    (quote
     ("fc8c4022ba43b18ade57862a581e783d63f80d2fca3256a20bc103715cb0aad7" default)))
  '(doc-view-resolution 300)
+ '(ecb-options-version "2.40")
  '(ess-R-font-lock-keywords
    (quote
     ((ess-R-fl-keyword:modifiers . t)

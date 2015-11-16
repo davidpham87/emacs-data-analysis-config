@@ -1,8 +1,8 @@
 (require 'iso-transl)                   ; Allow for dead keys
 (require 'dash)                         ; Modern elisp
 
-(global-set-key (kbd "C-'") 'other-frame)
-(global-set-key (kbd "C-<tab>") 'other-window) ; one key change windows
+(global-set-key (kbd "C-'") 'other-window)
+(global-set-key (kbd "C-§" ) 'other-frame) ; one key change windows
 
 ;; This is to make mac friendly
 ;; (setq mac-function-modifier 'control
@@ -24,8 +24,8 @@
 ;; (global-set-key (kbd "C-!") '"\\\{")
 
 (delete-selection-mode t) ; Delete selection when pressing [delete] key
-;; In order to avoid to hit SPC everytime
-(global-set-key (kbd "<M-dead-circumflex>") 'join-line)
+(global-set-key (kbd "<M-dead-circumflex>") 'join-line) ; In order to avoid to
+                                                        ; hit SPC everytime
 
 
 ;; Should be default but sometimes are overwritten
@@ -66,3 +66,7 @@
 (global-set-key (kbd "C-z") 'undo-tree-undo)
 
 ;; Should write for console C-c C-y instead of C-c C-z
+(define-key key-translation-map (kbd "C-c C-y") (kbd "C-c C-z"))
+;; (add-hook 'ess-mode-hook
+;;           (lambda () (local-set-key (kbd "C-c C-y")
+;;                                     'ess-switch-to-inferior-or-script-buffer)))
