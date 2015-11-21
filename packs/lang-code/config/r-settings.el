@@ -1,15 +1,7 @@
 ;; This is for the autocompletion in ESS
 (require 'ess)
 (setq ess-use-auto-complete nil)
-(setq ess-use-auto-complete 'script-only)
-
-;; (setq ac-auto-show-menu nil
-;;       ac-candidate-limit nil
-;;       ac-delay 0.3
-;;       ac-menu-height 10
-;;       ac-quick-help-delay 1
-;;       ac-quick-help-prefer-pos-tip t
-;;       ac-use-quick-help t)
+(setq ess-use-company 'script-only)
 
 (setq ess-indent-level 2)
 (setq ess-eval-visibly-p nil) ; otherwise C-c C-r (eval region) takes forever
