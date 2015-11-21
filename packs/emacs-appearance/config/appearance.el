@@ -16,6 +16,7 @@
 (set-face-attribute 'popup-tip-face nil :background "#003A4E"
                     :foreground "light gray")
 
+
 ;;; Set default Tab on 2 (Erased in python mode)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)

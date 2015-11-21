@@ -19,6 +19,8 @@
     company
     company-auctex
     company-jedi
+    company-quickhelp
+    pos-tip                             ; popup for company-quickhelp
     )
   "Autocomplete packages")
 

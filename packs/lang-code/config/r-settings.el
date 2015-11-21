@@ -1,6 +1,6 @@
 ;; This is for the autocompletion in ESS
 (require 'ess)
-(setq ess-use-auto-complete t)
+(setq ess-use-auto-complete nil)
 (setq ess-use-auto-complete 'script-only)
 
 ;; (setq ac-auto-show-menu nil
@@ -41,6 +41,8 @@
              (local-set-key (kbd "<C-dead-circumflex>") 'my-ess-eval)
              (setq ess-indent-level 2)
              (rainbow-mode t)
+             (company-mode)
+             (company-quickhelp-mode)
              (rainbow-delimiters-mode t)))
 
 (add-hook 'inferior-ess-mode-hook
@@ -48,6 +50,8 @@
              (local-set-key [C-up] 'comint-previous-input)
              (local-set-key [C-down] 'comint-next-input)
              (rainbow-mode t)
+             (company-mode)
+             (company-quickhelp-mode)
              (rainbow-delimiters-mode t)))
 
 (require 'ess-site)
