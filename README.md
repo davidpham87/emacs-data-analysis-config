@@ -18,8 +18,9 @@ It also includes some facilities to write markdown document (livedown).
 
 ## Configuration
 
-You need to set the *.emacs-live.el* file in your root folder and overwrite your
-*.emacs.d* folder with this repository.
+You need to set the *.emacs-live.el* file in your root folder and overwrite
+your *.emacs.d* folder with this repository. You can set your own configuration
+by specifying *user-conf.org* with loaded  by *.emacs-live.el*.
 
 ## French Swiss keyboard
 
@@ -31,7 +32,6 @@ backward-deleting.
 
 ## Some Emacs hints
 
-<<<<<<< HEAD
 + Use your two hands for doing the keys using the `Alt` and `Ctrl` keys.
 + For comfort and avoid *emacs pinky* disease: use your palm for hitting the
   `Ctrl` key on a flat keyboard. I use a Logitech K750 solar keyboard which is
@@ -48,7 +48,7 @@ backward-deleting.
 
 [Source code pro](https://github.com/adobe-fonts/source-code-pro) is an open-source font from adobe. To install it, download the (source)[https://github.com/adobe-fonts/source-code-pro/releases] and install them. Instruction on (this page)[https://github.com/adobe-fonts/source-code-pro].
 
-## Mirroring update from emacs live
+## Mirroring update from emacs-live
 
 Taking information from
 [github help](https://help.github.com/articles/syncing-a-fork/), you can fire up
