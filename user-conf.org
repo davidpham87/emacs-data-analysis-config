@@ -1,0 +1,50 @@
+#+TITLE: Emacs Personal Configuration
+#+AUTHOR: David Pham
+
+* Personal Information
+
+#+BEGIN_SRC emacs-lisp
+(setq user-full-name "David Pham"
+      user-mail-address "davidpham87@gmail.com")
+#+END_SRC
+
+* Initialize
+
+#+BEGIN_SRC emacs-lisp
+(package-initialize)
+#+END_SRC
+
+* Personalizing packs
+
+Emacs live ships with several default useful packs, however, some of them miss
+configuration language I need to code in. This configures what I need.
+
+#+BEGIN_SRC emacs-lisp
+(live-add-packs '(packages-management swiss-keyboard
+                                      emacs-appearance lang-code))
+#+END_SRC
+
+I quite dislike emacs-live default color-theme. The following remove all the undesired package from emacs-live.
+
+
+#+BEGIN_SRC emacs-lisp
+(setq unwanted-packs '("colour-pack")) ; packs to not load at start.
+
+(require 'cl)                           ; for the search fn
+(defun keep-packs? (packs unwanted-packs)
+  "Remove elements in elements in unwanted packs if they are partially
+found in packs. E.g. \"colour-packs\" might be matched to \"stable/colour-packs\" and hence will be erased. "
+  (delq nil (mapcar (lambda (s)
+                      (when (not (and (stringp s)
+                                      (some (lambda (x) (search x s))
+                                            unwanted-packs))) s)) packs)))
+
+(setq live-packs (keep-packs? live-packs unwanted-packs))
+#+END_SRC
+
+* Default application
+
+#+BEGIN_SRC emacs-lisp
+(setq dired-guess-shell-alist-user
+      '(("\\.pdf$" "evince &"))) ;;; Set the shell instruction for opening your files.
+#+END_SRC
