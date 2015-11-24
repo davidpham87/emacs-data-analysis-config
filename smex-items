@@ -1,30 +1,30 @@
 
 ;; ----- smex-history -----
 (
- set-frame-font
- find-grep
- find-dired
- customize-group
- customize
  eshell
+ package-install
+ load-theme
  ielm
+ htmlize-file
+ org-html-htmlize-generate-css
+ term
 )
 
 ;; ----- smex-data -----
 (
  (color-theme-gandalf . 2)
- (package-list-packages . 26)
+ (package-list-packages . 27)
  (color-theme-cyberpunk . 2)
  (menu-bar-mode . 4)
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 260)
- (eval-buffer . 54)
+ (eshell . 264)
+ (eval-buffer . 55)
  (lisp-mode . 8)
- (load-theme . 11)
- (ielm . 64)
- (package-install . 24)
+ (load-theme . 14)
+ (ielm . 75)
+ (package-install . 27)
  (set-background-color . 1)
  (set-cursor-color . 1)
  (forward-sentence . 1)
@@ -36,7 +36,7 @@
  (help . 18)
  (speedbar . 5)
  (jedi:install-server . 3)
- (grep . 1)
+ (grep . 5)
  (rgrep . 4)
  (zap-to-char . 3)
  (paredit-mode . 27)
@@ -50,7 +50,7 @@
  (find-grep . 31)
  (find-file . 8)
  (find-dired . 22)
- (grep-find . 5)
+ (grep-find . 6)
  (ac-complete . 2)
  (auto-complete . 5)
  (auto-complete-mode . 22)
@@ -59,7 +59,7 @@
  (pylint . 6)
  (find-grep-dired . 2)
  (TeX-mode . 1)
- (org-mode . 3)
+ (org-mode . 6)
  (indent-region . 2)
  (jedi-mode . 18)
  (org-return . 1)
@@ -75,7 +75,7 @@
  (er/mark-text-sentence . 1)
  (mark-end-of-sentence . 1)
  (mark-defun . 1)
- (customize-group . 8)
+ (customize-group . 9)
  (ess-swv-toggle-plug-into-AUCTeX . 1)
  (latex-extra-mode . 2)
  (pkg-info-library-version . 1)
@@ -172,4 +172,9 @@
  (undo-tree-mode . 1)
  (company-semantic . 1)
  (set-frame-font . 2)
+ (org-html-export-as-html . 1)
+ (org-html-htmlize-generate-css . 4)
+ (org-html-generate-style-link . 3)
+ (htmlize-file . 2)
+ (shell-command-with-editor-mode . 1)
 )

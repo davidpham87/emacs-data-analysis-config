@@ -4,5 +4,7 @@
 ;; See README for more information.
 
 ;; Load bindings config
-(live-load-config-file "update-packages-repos.el")
-(live-load-config-file "package-to-install.el")
+
+
+;; (live-load-config-file "update-packages-repos.el")
+(live-load-config-file "ensure-packages.el")

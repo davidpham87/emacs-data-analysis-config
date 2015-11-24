@@ -47,5 +47,7 @@ I quite dislike emacs-live default color-theme. The following remove all the und
 
 #+BEGIN_SRC emacs-lisp
   (setq dired-guess-shell-alist-user
-        '(("\\.pdf$" "evince &"))) ;;; Set the shell instruction for opening your files.
+          '(("\\.pdf$" "evince")
+            ("\\.html$" "google-chrome")))
+  ;;; Set the shell instruction for opening your files.
 #+END_SRC

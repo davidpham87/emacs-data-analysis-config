@@ -1,16 +1,30 @@
-;; Place your bindings here.
 
-;; For example:
-;;(define-key global-map (kbd "C-+") 'text-scale-increase)
-;;(define-key global-map (kbd "C--") 'text-scale-decrease)
+(require 'package)
 (require 'cl)
+(package-initialize)
+
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t))
+
+;;; Bootstrap use-package
+;; Install use-package if it's not already installed.
+;; use-package is used to configure the rest of the packages.
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)                ;; if you use :diminish
+(require 'bind-key)
 
 (defvar ac-pckgs
   '(auto-complete
     auto-complete-auctex
     auto-complete-c-headers
-    ac-cider
-    ac-R
     ac-html
     ac-html-bootstrap
     ac-html-csswatcher
@@ -19,15 +33,13 @@
     company
     company-auctex
     company-jedi
-    company-quickhelp
+    company-quickhelp                   ; M-h quick-help in company
     pos-tip                             ; popup for company-quickhelp
     )
   "Autocomplete packages")
 
 (defvar color-pckgs
   '(color-theme                         ; color-theme management
-    color-theme-sanityinc-tomorrow      ; cool color-themes
-    hc-zenburn-theme                    ; cool color-themes
     zenburn-theme                       ; A low contrast color theme for Emacs.
     rainbow-mode                        ; Colorize color names in buffers
     rainbow-delimiters                  ; Highlight parenthesis with their
@@ -51,7 +63,9 @@
     queue                               ; queue data structure
     yaxception                          ; exception style to elisp
     deferred                            ; deffered
-    epl)                                ; epl
+    epl                                 ; epl
+    use-package                         ; package administration
+    )
   "Elisp packages to make coding in elisp easier.")
 
 (defvar fly-pckgs
@@ -64,7 +78,6 @@
     )
   "Fly packages to checks syntax or spell cheking.")
 
-
 (defvar markup-pckgs
   '(auctex                              ; default LaTeX mode
     latex-extra                         ; some cool features for LaTeX
@@ -76,14 +89,13 @@
   "A list of package for markup language")
 
 (defvar other-pckgs
-  '(haskell-mode
-    ess                                 ; require apt-get update/upgrade
+  '(ess                                 ; require apt-get update/upgrade
     multiple-cursors                    ;
     paredit                             ; parenthesis manager
     projectile                          ; manage projects
     polymode                            ; several mode per buffer
     buffer-move                         ; swap-windows command for buffer
-    edit-server
+    edit-server                         ; writting e-mail with emacs
     websocket                           ; websocket for markdown-preview
     )
   "A list of packages to ensure are installed at launch.")
@@ -92,7 +104,7 @@
   '(jedi                                ; Python auto-completion in Emacs
     jedi-core                           ; elisp code for jedi
     pylint                              ; check with pytlint
-    python-environment                  ; python environment
+    python-environment                  ; python environment virtual-env
     )
   "Python packages to ensure are installed at launch.")
 
