@@ -1,4 +1,6 @@
 (live-add-pack-lib "cider")
+(live-add-pack-lib "clojure-mode")
+(require 'clojure-mode)
 (require 'cider)
 (require 'cider-apropos)
 (require 'cider-macroexpansion)
@@ -26,7 +28,6 @@
 (setq cider-popup-stacktraces-in-repl t)
 (add-to-list 'same-window-buffer-names "*cider*")
 
-;;Auto Complete
 (live-add-pack-lib "company")
 (require 'company)
 
