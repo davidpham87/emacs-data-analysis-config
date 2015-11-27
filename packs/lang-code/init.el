@@ -8,4 +8,5 @@
       '("r-settings.el" "python-settings.el" "latex-settings.el"
         "lang-code-settings.el" "flyspell-settings.el"
         "markdown-settings.el" "chrome-settings.el"
+        "haml-settings.el"
         "org-mode-settings.el"))
