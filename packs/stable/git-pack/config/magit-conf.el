@@ -1,6 +1,7 @@
 ;;; git-pack/magit-conf.el
 
-(live-add-pack-lib "magit/lisp")
+(live-add-pack-lib "magit-popup")
+(live-add-pack-lib "magit")
 (require 'magit)
 
 (add-hook 'magit-log-edit-mode-hook
