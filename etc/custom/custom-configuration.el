@@ -20,6 +20,8 @@
     ("09a4cbbfac44b87cc7007d1af849eef07955a7840fafa607c8a43e3e4acd9250" "f5eb916f6bd4e743206913e6f28051249de8ccfd070eae47b5bde31ee813d55f" "fc8c4022ba43b18ade57862a581e783d63f80d2fca3256a20bc103715cb0aad7" default)))
  '(doc-view-resolution 300)
  '(ecb-options-version "2.40")
+ '(emmet-indent-after-insert t)
+ '(emmet-indentation 2)
  '(ess-R-font-lock-keywords
    (quote
     ((ess-R-fl-keyword:modifiers . t)

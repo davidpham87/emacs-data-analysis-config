@@ -85,6 +85,7 @@
     markdown-mode                       ; markdown packages
     markdown-mode+                      ; extra functions for the markdown
     pandoc-mode                         ; convert from markup language
+    emmet-mode                          ; html/haml zen-coding
     )
   "A list of package for markup language")
 
