@@ -2,6 +2,7 @@
 ;;
 ;; This is where everything starts. Do you remember this place?
 ;; It remembers you...
+(package-initialize)
 
 (setq live-ascii-art-logo ";;
 ;;     MM\"\"\"\"\"\"\"\"`M
