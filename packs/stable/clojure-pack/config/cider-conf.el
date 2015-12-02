@@ -1,5 +1,3 @@
-(live-add-pack-lib "cider")
-(live-add-pack-lib "clojure-mode")
 (require 'clojure-mode)
 (require 'cider)
 (require 'cider-apropos)
@@ -16,21 +14,17 @@
 
 (add-hook 'cider-repl-mode-hook
           (lambda ()
-            (cider-turn-on-eldoc-mode)
             (paredit-mode 1)))
 
 (add-hook 'cider-mode-hook
            (lambda ()
-             (cider-turn-on-eldoc-mode)
              (paredit-mode 1)))
 
 (setq cider-popup-stacktraces t)
 (setq cider-popup-stacktraces-in-repl t)
 (add-to-list 'same-window-buffer-names "*cider*")
 
-(live-add-pack-lib "company")
 (require 'company)
-
 (add-hook 'cider-mode-hook #'company-mode)
 (add-hook 'cider-repl-mode-hook #'company-mode)
 
@@ -38,7 +32,7 @@
 ;; things. This might be dangerous for some people relying on
 ;; *print-length* being larger. Consider a work around
 (defun live-nrepl-set-print-length ()
-  (nrepl-send-string-sync "(set! *print-length* 100)" "clojure.core"))
+  (nrepl-send-sync-request "(set! *print-length* 100)" "clojure.core"))
 
 (add-hook 'nrepl-connected-hook 'live-nrepl-set-print-length)
 

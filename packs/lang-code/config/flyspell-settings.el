@@ -15,10 +15,10 @@
   "Custom function to spell check next highlighted word"
   (interactive)
   (flyspell-goto-next-error)
-  (ispell-word)
-  )
+  (ispell-word))
 
 (global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
 
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
 (add-hook 'markdown-mode-hook 'flyspell-mode)
 (add-hook 'org-mode-hook 'flyspell-mode)

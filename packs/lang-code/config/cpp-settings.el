@@ -10,5 +10,5 @@
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
-;; (custom-set-variables
-;;  '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint.py"))
+(custom-set-variables
+ '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint.py"))

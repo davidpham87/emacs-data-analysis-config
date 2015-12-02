@@ -10,9 +10,12 @@
 (defun org-html-generate-style-link ()
   "Generate a link for css"
   (interactive)
-  (let ((p (concat "#+SETUPFILE: " (concat user-emacs-directory
-                                             "packs/lang-code/lib/org-html-themes"
-                                             "/setup/theme-readtheorg.setup"))))
-    (print p)
-    p))
+  (let ((p (concat "#+SETUPFILE: "
+                   user-emacs-directory
+                   "packs/lang-code/lib/org-html-themes"
+                   "/setup/theme-readtheorg.setup"))
+        (code-p (concat "#+HTML_HEAD: <style>"
+                        " pre.src {background: #3F3F3F; color: #DCDCCC;}"
+                        " </style>")))
+    (insert (concat p "\n" code-p))))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
