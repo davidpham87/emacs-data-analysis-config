@@ -3,7 +3,6 @@
 ;;   (define-key yas-minor-mode-map [(tab)] nil)
 ;;   (define-key yas-minor-mode-map (kbd "TAB") nil)
 ;;   (define-key yas-minor-mode-map (kbd "<tab>") nil))
-
 ;; (add-hook 'org-mode-hook 'disable-yas-tab-key)
 (setq org-src-fontify-natively t)
 
@@ -18,4 +17,3 @@
                         " pre.src {background: #3F3F3F; color: #DCDCCC;}"
                         " </style>")))
     (insert (concat p "\n" code-p))))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

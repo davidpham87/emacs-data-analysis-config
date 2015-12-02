@@ -30,8 +30,8 @@ This org file manage the packages commonly used in my settings.
   (require 'bind-key)
 #+END_SRC
 
-** Autocomplete packages
-
+** Autocomplete/Company packages
+TODO: Replace everything with company backends.
 #+BEGIN_SRC emacs-lisp
   (defvar ac-pckgs
     '(auto-complete
@@ -45,7 +45,7 @@ This org file manage the packages commonly used in my settings.
       company
       company-auctex
       company-jedi
-      company-quickhelp                   ; M-h quick-help in company
+      company-quickhelp                   ; M-h (C-TAB) quick-help in company
       pos-tip                             ; popup for company-quickhelp
       )
     "Autocomplete packages")
@@ -141,7 +141,7 @@ Cider is the best mode in emacs for coding in Clojure. The other emacs packages 
 
 #+BEGIN_SRC emacs-lisp
   (defvar python-pckgs
-    '(jedi                                ; Python auto-completion in Emacs
+    '(company-jedi                        ; Python auto-completion in Emacs based on company
       jedi-core                           ; elisp code for jedi
       pylint                              ; check with pytlint
       python-environment                  ; python environment virtual-env

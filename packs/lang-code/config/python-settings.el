@@ -7,8 +7,6 @@
  python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
  python-shell-completion-setup-code
  "from IPython.core.completerlib import module_completion"
- python-shell-completion-module-string-code
- "';'.join(module_completion('''%s'''))\n"
  python-shell-completion-string-code
  "';'.join(get_ipython().Completer.all_completions('''%s'''))\n")
 
@@ -23,11 +21,13 @@
 (add-hook 'python-mode-hook 'pylint-add-menu-items)
 (add-hook 'python-mode-hook 'pylint-add-key-bindings)
 
-;;  Python JEDI
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)
+;;  Python Company JEDI
+(add-hook 'python-mode-hook
+          (lambda ()
+            (company-mode t)
+            (company-quickhelp-mode)
+            (add-to-list 'company-backends 'company-jedi)))
 (setq jedi:complete-on-dot t)
-
 (setq jedi:environment-virtualenv
       (list "virtualenv3" "--system-site-packages")) ; Python3
 

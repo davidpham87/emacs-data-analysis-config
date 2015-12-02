@@ -33,7 +33,7 @@
     company
     company-auctex
     company-jedi
-    company-quickhelp                   ; M-h quick-help in company
+    company-quickhelp                   ; M-h (C-TAB) quick-help in company
     pos-tip                             ; popup for company-quickhelp
     )
   "Autocomplete packages")
@@ -102,7 +102,7 @@
   "A list of packages to ensure are installed at launch.")
 
 (defvar python-pckgs
-  '(jedi                                ; Python auto-completion in Emacs
+  '(company-jedi                        ; Python auto-completion in Emacs based on company
     jedi-core                           ; elisp code for jedi
     pylint                              ; check with pytlint
     python-environment                  ; python environment virtual-env

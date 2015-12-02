@@ -1,25 +1,25 @@
 
 ;; ----- smex-history -----
 (
- find-dired
- find-grep
- describe-font
- describe-minor-mode-from-indicator
- set-frame-font
- ispell-change-dictionary
+ company-dabbrev
+ company-capf
+ company-mode
+ company-jedi
+ package-list-packages
  eshell
+ yas-global-mode
 )
 
 ;; ----- smex-data -----
 (
  (color-theme-gandalf . 2)
- (package-list-packages . 32)
+ (package-list-packages . 33)
  (color-theme-cyberpunk . 2)
  (menu-bar-mode . 4)
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 315)
+ (eshell . 317)
  (eval-buffer . 61)
  (lisp-mode . 9)
  (load-theme . 14)
@@ -111,7 +111,7 @@
  (sudo-edit . 5)
  (ess-sos . 3)
  (cider-repl-toggle-pretty-printing . 1)
- (company-mode . 17)
+ (company-mode . 19)
  (livedown:preview . 15)
  (js2-mode . 2)
  (livedown:kill . 4)
@@ -137,7 +137,7 @@
  (yas-abort-snippet . 1)
  (yas-recompile-all . 1)
  (yas/global-mode . 1)
- (yas-global-mode . 4)
+ (yas-global-mode . 5)
  (org-table-next-field . 1)
  (toggle-debug-on-error . 1)
  (TeX-view . 1)
@@ -201,4 +201,7 @@
  (flycheck-error-list-mode . 1)
  (company-quickhelp-manual-begin . 1)
  (describe-minor-mode-from-indicator . 1)
+ (company-jedi . 2)
+ (company-capf . 1)
+ (company-dabbrev . 11)
 )
