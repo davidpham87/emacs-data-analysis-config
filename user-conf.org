@@ -1,6 +1,7 @@
 #+TITLE: Emacs Personal Configuration
 #+AUTHOR: David Pham
 #+SETUPFILE: ~/.emacs.d/packs/lang-code/lib/org-html-themes/setup/theme-readtheorg.setup
+#+HTML_HEAD: <style> pre.src {background: #3F3F3F; color: #DCDCCC;} </style>
 
 * Personal Information
 
@@ -10,7 +11,7 @@
 #+END_SRC
 
 * Initialize
-
+This allows to see the packages in ELPA.
 #+BEGIN_SRC emacs-lisp
 (package-initialize)
 #+END_SRC
@@ -21,8 +22,8 @@ Emacs live ships with several default useful packs, however, some of them miss
 configuration language I need to code in. This configures what I need.
 
 #+BEGIN_SRC emacs-lisp
-  (live-add-packs '(packages-management swiss-keyboard
-                                        emacs-appearance lang-code))
+  (live-add-packs
+   '(packages-management swiss-keyboard  emacs-appearance lang-code))
 #+END_SRC
 
 I quite dislike emacs-live default color-theme. The following remove all the undesired package from emacs-live.
@@ -33,8 +34,9 @@ I quite dislike emacs-live default color-theme. The following remove all the und
 
   (require 'cl)                           ; for the search fn
   (defun keep-packs? (packs unwanted-packs)
-    "Remove elements in elements in unwanted packs if they are partially
-  found in packs. E.g. \"colour-packs\" might be matched to \"stable/colour-packs\" and hence will be erased. "
+    "Remove elements in elements in unwanted packs if they are
+     partially found in packs. E.g. \"colour-packs\" might be
+     matched to \"stable/colour-packs\" and hence will be erased. "
     (delq nil (mapcar (lambda (s)
                         (when (not (and (stringp s)
                                         (some (lambda (x) (search x s))

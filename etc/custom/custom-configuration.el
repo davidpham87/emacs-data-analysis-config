@@ -38,6 +38,7 @@
  '(ess-r-args-electric-paren t)
  '(ess-use-auto-complete nil)
  '(fci-rule-color "#d6d6d6")
+ '(flycheck-lintr-linters "with_defaults(single_quotes_linter=NULL)")
  '(font-use-system-font t)
  '(foreground-color "#cccccc")
  '(global-auto-complete-mode nil)
