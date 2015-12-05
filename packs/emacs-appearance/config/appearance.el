@@ -13,7 +13,7 @@
 (setq-default tab-width 2)
 (setq indent-line-function 'insert-tab)
 
-(setq dired-listing-switches "-alh")
+(setq dired-listing-switches "-alhX")
 
 ;;; Show parenthesis and color in the mode
 (defun rainbow-enable-in-mode ()

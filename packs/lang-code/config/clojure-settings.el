@@ -2,6 +2,7 @@
 (require 'company)
 (require 'company-quickhelp)
 
+(define-key clojure-mode-map [C-tab] 'company-quickhelp-manual-begin)
 (define-key cider-mode-map [C-tab] 'company-quickhelp-manual-begin)
 
 (add-hook 'cider-repl-mode-hook #'company-mode)
