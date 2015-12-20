@@ -24,9 +24,9 @@
 ;; (global-set-key (kbd "C-!") '"\\\{")
 
 (delete-selection-mode t) ; Delete selection when pressing [delete] key
+(global-set-key (kbd "<s-dead-circumflex>") 'join-line) ; In order to avoid to
 (global-set-key (kbd "<M-dead-circumflex>") 'join-line) ; In order to avoid to
-                                                        ; hit SPC everytime
-
+                                        ; hit SPC everytime
 
 ;; Should be default but sometimes are overwritten
 (global-set-key [M-a] 'backward-sentence)

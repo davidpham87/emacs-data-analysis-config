@@ -1,30 +1,30 @@
 
 ;; ----- smex-history -----
 (
+ eshell
+ package-list-packages
+ package-install
  company-dabbrev
- company-capf
  company-mode
  company-jedi
- package-list-packages
- eshell
  yas-global-mode
 )
 
 ;; ----- smex-data -----
 (
  (color-theme-gandalf . 2)
- (package-list-packages . 33)
+ (package-list-packages . 34)
  (color-theme-cyberpunk . 2)
  (menu-bar-mode . 4)
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 317)
+ (eshell . 320)
  (eval-buffer . 61)
  (lisp-mode . 9)
  (load-theme . 14)
  (ielm . 80)
- (package-install . 34)
+ (package-install . 35)
  (set-background-color . 1)
  (set-cursor-color . 1)
  (forward-sentence . 1)

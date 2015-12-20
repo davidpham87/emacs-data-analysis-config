@@ -1,0 +1,54 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ (#("/home/david/new-ubuntu-config/" 12 15 (face flx-highlight-face)) . "swap_keys/")
+ ("/home/david/" . ".lein/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/david/"
+ "/home/david/new-ubuntu-config/swap_keys/"
+ "/home/david/new-ubuntu-config/"
+ "/home/david/.lein/"
+ "/home/david/Documents/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".Xmodmap"
+ ".xinitrc"
+ ".#install.sh"
+ "README.md"
+ "install.sh"
+ "LICENSE"
+ "profiles.clj"
+ "hello.clj"
+ ".profile"
+ ".bashrc"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/david/new-ubuntu-config/swap_keys/" (22134 38297 445122 647000) "install.sh" "./" "../" "README.md" ".#install.sh")
+
+ ("/home/david/" (22134 38222 2975 950000) ".gnupg/" ".sudo_as_admin_successful" ".m2/" ".mozilla/" "Templates/" "Desktop/" ".bashrc" ".config/" "./" ".ssh/" ".gconf/" ".emacs.d/" "Pictures/" ".bash_logout" "bin/" ".dbus/" "Downloads/" "../" ".xinitrc" ".emacs-live.el" "Documents/" "Videos/" ".fonts/" ".local/" "new-ubuntu-config/" "Public/" ".profile" ".cache/" ".lein/" ".oracle_jre_usage/" ".gnome/" ".ICEauthority" "Music/" ".bash_history" ".Xmodmap" ".pki/")
+
+ ("/home/david/Documents/" (22133 32335 303827 96000) "./" "hello.clj" "../" "bcmwl-kernel-source_6.30.223.248+bdcom-0ubuntu7_amd64.deb" "dkms_2.2.0.3-2ubuntu6_all.deb")
+
+ ("/home/david/.lein/" (22133 32455 544021 782000) "profiles.clj" "./" "../" "repl-history" "self-installs/")
+
+ ("/home/david/new-ubuntu-config/" (22134 35798 274553 183000) ".git/" "java/" "python/" "git/" "emacs/" "./" "swap_keys/" "TODO.md" "install_make/" "create_makefile.py" ".gitignore" "../" "fonts/" "r_cran/" "Makefile" "timezone/" "finger/" "ruby/" "nodejs/" "clojure/" "README.md" "markdown_livedown/" "LICENSE" "google_drive/" "firewall/" "swap_file/")
+
+ ("/home/david/.emacs.d/" (22133 32375 293221 379000) "elpa/" ".git/" "LICENSE.txt" "CHANGELOG.md" "smex-items" "auto/" "manifest.el" "./" "installer/" "user-conf.org" "etc/" ".gitignore" "init.el" "../" "packs/" ".gitmodules" "tmp/" "ido.last" "lib/" "README-Emacs-live.md" "user-conf.el" "README.md")
+
+ ("/home/david/.emacs.d/elpa/" (22133 32395 313919 732000) "popup-20151125.542/" "pkg-info-20150517.443/" "gnupg/" "flymake-python-pyflakes-20131127.6/" "markdown-mode+-20120829.510/" "flycheck-20151219.122/" "auto-complete-pcmp-20140226.2251/" "deferred-20151007.1657/" "pos-tip-20150318.813/" "buffer-move-20151106.49/" "yasnippet-20151212.2133/" "company-auctex-readme.txt" "hamlet-mode-20131207.2324/" "websocket-20150719.1048/" "latex-extra-20151116.122/" "edit-server-20141231.1358/" "queue-0.1.1.signed" "./" "zenburn-theme-20151218.1241/" "rainbow-delimiters-20150320.17/" "git-commit-20151111.418/" "dash-20151216.1315/" "python-environment-20150310.153/" "hydra-20151214.417/" "diminish-20151215.915/" "rainbow-mode-0.12/" "log4e-20150105.505/" "bind-key-20150321.213/" "flycheck-google-cpplint-20140806.925/" "markup-faces-20141110.17/" "ecb-20140215.114/" "emmet-mode-20151213.738/" "org-ac-20140302.413/" "async-20151123.256/" "spinner-1.4.signed" "flymake-google-cpplint-20140205.525/" "../" "haskell-mode-20151217.1622/" "ess-20151217.544/" "loop-20130309.805/" "spinner-1.4/" "google-c-style-20140929.1118/" "gmail-message-mode-readme.txt" "auto-complete-c-headers-20150911.2023/" "cider-20151219.4/" "let-alist-1.0.4.signed" "company-quickhelp-20150804.319/" "ctable-20140304.1659/" "yaxception-20150105.652/" "polymode-20151216.533/" "company-auctex-20151102.643/" "jedi-core-20151214.705/" "s-20150924.406/" "seq-20151121.1017/" "epc-20140609.2234/" "ac-html-20151005.31/" "haml-mode-20150508.2011/" "auto-complete-20151211.227/" "web-completion-data-20150623.333/" "projectile-20151217.1352/" "let-alist-1.0.4/" "pandoc-mode-20151030.313/" "zenburn-theme-20151101.1158/" "multiple-cursors-20151205.1225/" "magit-20151220.318/" "edit-server-htmlize-20130329.1548/" "adoc-mode-20151119.914/" "rainbow-mode-0.12.signed" "color-theme-20080305.34/" "with-editor-20151214.505/" "use-package-20151112.1439/" "archives/" "ac-html-bootstrap-20150930.41/" "ht-20150830.1115/" "concurrent-20150309.2052/" "f-20151113.123/" "epl-20150517.433/" "auctex-11.89.signed" "queue-0.1.1/" "julia-mode-20150912.800/" "ac-html-csswatcher-20151208.1313/" "markdown-mode-20151218.2307/" "auctex-11.89/" "clojure-mode-20151213.1038/" "magit-popup-20151220.314/" "ham-mode-20150811.606/" "html-to-markdown-20151105.40/" "flymake-easy-20140818.55/" "yasnippet-bundle-0.6.1/" "company-jedi-readme.txt" "gmail-message-mode-20140815.816/" "htmlize-20130207.1202/" "auto-complete-auctex-20140223.958/" "company-jedi-20151216.1921/" "company-20151208.1341/" "latex-preview-pane-20151023.1303/" "paredit-20150217.713/" "pylint-20150123.1600/" "enlive-readme.txt")
+
+ ("/home/david/.emacs.d/elpa/ac-html-csswatcher-20151208.1313/" (22133 32385 329571 438000) "ac-html-csswatcher-pkg.elc" "./" "ac-html-csswatcher.el" "../" "ac-html-csswatcher.elc" "ac-html-csswatcher-autoloads.el" "ac-html-csswatcher-pkg.el")
+
+ ("/home/david/bin/" (22133 30416 852036 684000) "./" "../" "lein")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
