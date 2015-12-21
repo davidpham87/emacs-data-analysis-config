@@ -2,46 +2,97 @@
 
 ;; ----- ido-last-directory-list -----
 (
- (#("/home/david/new-ubuntu-config/" 12 15 (face flx-highlight-face)) . "swap_keys/")
- ("/home/david/" . ".lein/")
+ ("/home/" . "david/")
+ ("/home/david/.config/" . "autostart/")
+ ("/etc/" . "init/")
+ ("/" . "etc/")
+ ("/home/david/.emacs.d/packs/swiss-keyboard/" . "config/")
+ ("/home/david/.emacs.d/packs/emacs-appearance/" . "config/")
+ ("/home/david/.emacs.d/packs/lang-code/" . "config/")
+ ("/home/david/.emacs.d/packs/" . "swiss-keyboard/")
+ ("/home/david/.emacs.d/" . #("packs/" 0 5 (face flx-highlight-face)))
+ ("/home/david/new-ubuntu-config/" . "swap_keys/")
+ ("/home/david/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/david/.emacs.d/packs/swiss-keyboard/config/"
+ "/home/david/.emacs.d/"
  "/home/david/"
  "/home/david/new-ubuntu-config/swap_keys/"
  "/home/david/new-ubuntu-config/"
+ "/usr/share/X11/xkb/symbols/macintosh_vndr/"
+ "/usr/share/X11/xkb/keycodes/"
  "/home/david/.lein/"
  "/home/david/Documents/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- ".Xmodmap"
+ "swiss-keyboard.el"
+ "user-conf.org"
  ".xinitrc"
- ".#install.sh"
- "README.md"
  "install.sh"
+ "README.md"
  "LICENSE"
- "profiles.clj"
- "hello.clj"
- ".profile"
- ".bashrc"
+ "test-emacs.sh"
+ "ch"
+ "apple"
+ "macintosh"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/david/new-ubuntu-config/swap_keys/" (22134 38297 445122 647000) "install.sh" "./" "../" "README.md" ".#install.sh")
+ ("/home/david/.emacs.d/packs/swiss-keyboard/config/" (22135 61577 236626 440000) "./" "swiss-keyboard.el" "../" ".gitkeep")
 
- ("/home/david/" (22134 38222 2975 950000) ".gnupg/" ".sudo_as_admin_successful" ".m2/" ".mozilla/" "Templates/" "Desktop/" ".bashrc" ".config/" "./" ".ssh/" ".gconf/" ".emacs.d/" "Pictures/" ".bash_logout" "bin/" ".dbus/" "Downloads/" "../" ".xinitrc" ".emacs-live.el" "Documents/" "Videos/" ".fonts/" ".local/" "new-ubuntu-config/" "Public/" ".profile" ".cache/" ".lein/" ".oracle_jre_usage/" ".gnome/" ".ICEauthority" "Music/" ".bash_history" ".Xmodmap" ".pki/")
+ (#("/home/david/.emacs.d/" 12 20 (face flx-highlight-face)) (22135 61227 53783 809000) "auto-save-list/" "elpa/" ".git/" "LICENSE.txt" "CHANGELOG.md" "smex-items" "auto/" "manifest.el" "./" "test-emacs.sh" "installer/" "user-conf.org" "etc/" ".gitignore" "init.el" "../" "packs/" ".gitmodules" "tmp/" "ido.last" "lib/" "README-Emacs-live.md" "user-conf.el" "README.md")
+
+ ("/home/david/" (22135 60899 298672 748000) ".selected_editor" ".gnupg/" ".sudo_as_admin_successful" ".m2/" ".mozilla/" "nano.save" "Templates/" "Desktop/" ".bashrc" ".config/" "./" ".ssh/" "test-emacs.sh" ".gconf/" ".emacs.d/" "Pictures/" "R/" ".bash_logout" "bin/" ".dbus/" "Downloads/" "../" ".ipython/" ".emacs-live.el" ".python_history" "Documents/" ".gitconfig" "Videos/" ".fonts/" ".local/" "new-ubuntu-config/" "Public/" ".profile" ".gem/" ".cache/" ".lein/" ".oracle_jre_usage/" ".gnome/" ".nano/" ".ICEauthority" "Music/" ".bash_history" ".pki/")
+
+ ("/home/david/.config/autostart/" (22134 42471 995022 65000) "./" "../")
+
+ ("/home/david/.config/" (22134 65116 903705 988000) "goa-1.0/" "update-notifier/" "autostart/" "dleyna-renderer-service.conf" "./" "gtk-3.0/" "evolution/" "dleyna-server-service.conf" "mimeapps.list" "google-chrome/" "../" "gnome-session/" "ibus/" "gnome-control-center/" "menus/" "user-dirs.locale" "yelp/" "user-dirs.dirs" "nautilus/" "gedit/" "pulse/" "dconf/" "libaccounts-glib/" "software-center/")
+
+ ("/etc/init/" (22133 28824 360642 642000) "procps-instance.conf" "rfkill-restore.conf" "bootmisc.sh.conf" "cups-browsed.conf" "mounted-tmp.conf" "network-interface-container.conf" "hwclock.conf" "mounted-proc.conf" "rsyslog.conf" "dbus.conf" "mounted-debugfs.conf" "mountnfs.sh.conf" "alsa-state.conf" "./" "failsafe-x.conf" "mountdevsubfs.sh.conf" "avahi-cups-reload.conf" "console-font.conf" "plymouth-ready.conf" "mountall-net.conf" "mountkernfs.sh.conf" "console-setup.conf" "plymouth-splash.conf" "mountall.conf" "irqbalance.conf" "ufw.conf" "../" "plymouth-stop.conf" "mounted-run.conf" "plymouth-log.conf" "kmod.conf" "udevmonitor.conf" "hwclock-save.conf" "apport.conf" "passwd.conf" "bluetooth.conf" "hostname.sh.conf" "mountall-shell.conf" "network-interface-security.conf" "udevtrigger.conf" "hostname.conf" "alsa-store.conf" "mountall-bootclean.sh.conf" "usb-modeswitch-upstart.conf" "whoopsie.conf" "cron.conf" "hwclock.sh.conf" "gdm.conf" "thermald.conf" "mountall-reboot.conf" "setvtrgb.conf" "resolvconf.conf" "ureadahead-other.conf" "cups.conf" "network-manager.conf" "apparmor.conf" "rfkill-store.conf" "plymouth-upstart-bridge.conf" "plymouth.conf" "mountnfs-bootclean.sh.conf" "anacron.conf" "udev.conf" "gpu-manager.conf" "mountall.sh.conf" "acpid.conf" "friendly-recovery.conf" "mounted-var.conf" "alsa-restore.conf" "mtab.sh.conf" "networking.conf" "avahi-daemon.conf" "ureadahead.conf" "plymouth-shutdown.conf" "alsa-utils.conf" "checkfs.sh.conf" "checkroot-bootclean.sh.conf" "mounted-dev.conf" "checkroot.sh.conf" "procps.conf" "network-interface.conf")
+
+ ("/etc/" (22133 32646 322689 457000) "pcmcia/" "anacrontab" "nsswitch.conf" "groff/" "dnsmasq.d/" "iftab" "ld.so.conf.d/" "dpkg/" "xdg/" "update-motd.d/" "rc1.d/" "ldap/" "hostname" "rc.local" "libaudit.conf" "networks" "localtime" "aliases.db" "hosts.allow" "libpaper.d/" "avahi/" "subgid" "dhcp/" "papersize" "ufw/" "rpc" "systemd/" "python/" "usb_modeswitch.d/" "gdb/" "passwd-" "rsyslog.conf" "selinux/" "ghostscript/" "terminfo/" "newt/" "magic.mime" "cron.hourly/" "polkit-1/" "dkms/" "apg.conf" "update-notifier/" "mail.rc" "udev/" "emacs/" "dleyna-renderer-service.conf" "python3.4/" "fuse.conf" "netscsid.conf" "acpi/" "wodim.conf" "cups/" "protocols" "binfmt.d/" "hotplug/" "gtk-3.0/" "debconf.conf" "opt/" "NetworkManager/" "init.d/" "services" "gtk-2.0/" "nanorc" "rc6.d/" "cron.monthly/" "brlapi.key" "pam.conf" "zsh_command_not_found" "cupshelpers/" "subgid-" "R/" ".pwd.lock" "vconsole.conf" "X11/" "issue" "hosts" "brltty.conf" "sysctl.d/" "rc3.d/" "pam.d/" "dleyna-server-service.conf" "kbd/" "geoclue/" "security/" "wgetrc" "machine-id" "modules" "bluetooth/" "mtab" "rmt" "brltty/" "vim/" "fstab" "grub.d/" "ImageMagick-6/" "sensors3.conf" "bash_completion" "rc0.d/" "gnome-app-install/" "crontab" "vtrgb" "dbus-1/" "login.defs" "ca-certificates/" "default/" "hp/" "fonts/" "securetty" "skel/" "insserv.conf" "rc4.d/" "gshadow" "updatedb.conf" "sysctl.conf" "postfix/" "sane.d/" "mailcap" "resolvconf/" "bash.bashrc" "timezone" "rcS.d/" "ucf.conf" "lintianrc" "firefox/" "initramfs-tools/" "speech-dispatcher/" "calendar/" "tmpfiles.d/" "os-release" "texmf/" "apport/" "apt/" "sudoers.d/" "sensors.d/" "mtools.conf" "issue.net" "at-spi2/" "shadow" "gdm/" "depmod.d/" "aliases" "shells" "spamassassin/" "sudoers" "python3/" "cron.weekly/" "cron.daily/" "sgml/" "logrotate.conf" "python2.7/" "cracklib/" "insserv/" "mime.types" "modules-load.d/" "drirc" "host.conf" "perl/" "ca-certificates.conf" "kernel/" "environment" "lsb-release" ".java/" "gss/" "modprobe.d/" "chatscripts/" "resolv.conf" "group" "console-setup/" "insserv.conf.d/" "refind.d/" "logrotate.d/" "network/" "pnm2ppa.conf" "subuid" "bash_completion.d/" "UPower/" "ld.so.cache" "gshadow-" "libnl-3/" "pki/" "apparmor.d/" "inputrc" "hosts.deny" "dictionaries-common/" "gai.conf" "passwd" "apparmor/" "kernel-img.conf" "rc5.d/" "locale.alias" "quilt.quiltrc" "rc2.d/" "manpath.config" "shadow-" "bindresvport.blacklist" "ltrace.conf" "group-" "iproute2/" "debian_version" "mke2fs.conf" "subuid-" "samba/" "mysql/" "xml/" "update-manager/" "pulse/" "logcheck/" "init/" "alternatives/" "udisks2/" "popularity-contest.conf" "cron.d/" "dconf/" "magic" "ppp/" "ifplugd/" "mailcap.order" "ssh/" "adduser.conf" "gnome/" "profile" "ssl/" "deluser.conf" "rsyslog.d/" "libreoffice/" "usb_modeswitch.conf" "legal" "hdparm.conf" "ld.so.conf" "profile.d/" "thermald/" "kerneloops.conf" "gconf/" "mail/" "wpa_supplicant/" "apm/" "pm/" "../" "./")
+
+ ("/home/" (22133 26566 486755 549000) "./" "../" "david/")
+
+ ("/home/david/new-ubuntu-config/swap_keys/" (22134 59419 932008 3000) "install.sh" "./" "../" "ch" "README.md")
+
+ ("/home/david/new-ubuntu-config/" (22134 59223 554268 932000) ".git/" "java/" "python/" "git/" "emacs/" "./" "swap_keys/" "TODO.md" "install_make/" "create_makefile.py" ".gitignore" "../" "fonts/" "r_cran/" "Makefile" "timezone/" "finger/" "ruby/" "nodejs/" "clojure/" "README.md" "markdown_livedown/" "LICENSE" "google_drive/" "firewall/" "swap_file/")
+
+ ("/usr/" (22055 46013 0 0) "share/" "./" "src/" "bin/" "../" "local/" "lib/" "include/" "games/" "sbin/")
+
+ ("/usr/share/" (22133 29466 849223 785000) "iptables/" "gupnp-av/" "foo2zjs/" "util-macros/" "base-files/" "groff/" "seahorse/" "gstreamer-1.0/" "zsh/" "gnupg/" "xul-ext/" "dpkg/" "ubuntu-drivers-common/" "gnome-mahjongg/" "fontconfig/" "doc/" "gnome-sudoku/" "gnome-video-effects/" "python-pycparser/" "avahi/" "usb_modeswitch/" "ufw/" "gnome-color-manager/" "java/" "gnome-online-accounts/" "systemd/" "python/" "grilo-plugins/" "examples/" "binfmts/" "i18n/" "gdb/" "libc-bin/" "gnome-maps/" "sushi/" "sgml-base/" "gupnp-dlna-2.0/" "ghostscript/" "colord/" "pyzy/" "vte/" "debhelper/" "polkit-1/" "gtk-doc/" "update-notifier/" "dnsmasq-base/" "icons/" "tcltk/" "oneconf/" "emacs/" "bsd-mailx/" "secureboot/" "pixmaps/" "autoconf/" "thumbnailers/" "evince/" "gst-plugins-base/" "software-properties/" "mime-info/" "cups/" "language-tools/" "gtk-3.0/" "python-apt/" "debconf/" "kde4/" "perl5/" "build-essential/" "GConf/" "file-roller/" "libgnomekbd/" "bash-completion/" "xdiagnose/" "totem/" "libtool/" "org.gnome.Weather/" "apturl/" "aspell/" "evolution/" "gnome-vpn-properties/" "R/" "linux-sound-base/" "enchant/" "pulseaudio/" "pkg-config-crosswrapper" "python-scour/" "gnome-user-share/" "X11/" "pkgconfig/" "hal/" "gnome-bluetooth/" "orca/" "locales/" "hplip/" "libquvi-scripts/" "purple/" "pam-configs/" "ibus-table/" "GeoIP/" "language-support/" "language-selector/" "webkitgtk-3.0/" "m17n/" "intltool-debian/" "indicators/" "apt-xapian-index/" "python3-pycparser/" "im-config/" "tex-common/" "system-config-printer/" "gnome-tweak-tool/" "session-migration/" "yelp-tools/" "brltty/" "vim/" "info/" "nano/" "poppler/" "grub/" "refind-0.10.1/" "unity/" "po-debconf/" "man-db/" "ImageMagick-6/" "gnome-shell/" "menu/" "dbus-1/" "ca-certificates/" "automake-1.15/" "libsensors4/" "locale/" "p11-kit/" "fonts/" "qtchooser/" "itstool/" "sysv-rc/" "postfix/" "gnome-session/" "resolvconf/" "applications/" "mozilla/" "yelp-xsl/" "base-passwd/" "nautilus-share/" "acpi-support/" "popularity-contest/" "accounts/" "gvfs/" "gnome-settings-daemon-3.0/" "libparse-debianchangelog-perl/" "alsa/" "mobile-broadband-provider-info/" "initramfs-tools/" "empathy/" "zeitgeist/" "pnm2ppa/" "liblouis/" "consolefonts/" "speech-dispatcher/" "misc/" "calendar/" "mimelnk/" "dh-python/" "ibus/" "nm-applet/" "adium/" "gnome-control-center/" "usb-creator/" "guile/" "texmf/" "djvu/" "lintian/" "ibus-pinyin/" "apport/" "gir-1.0/" "xsessions/" "pam/" "libwacom/" "apt/" "liblangtag/" "caribou/" "libexttextcat/" "eog/" "apps/" "gdm/" "ssl-cert/" "libnm-gtk/" "yelp/" "aclocal/" "spamassassin/" "python3/" "cogl/" "gitweb/" "xml-core/" "sgml/" "help-langpack/" "insserv/" "gnome-mines/" "tracker/" "zenity/" "gnome-settings-daemon/" "gtk-engines/" "unattended-upgrades/" "perl/" "evolution-data-server/" "upstart/" "locale-langpack/" "qt4/" "aclocal-1.15/" "sounds/" "libaudio2/" "zoneinfo/" "debianutils/" "texinfo/" "git-core/" "hwdata/" "tabset/" "color/" "vala/" "brasero/" "gutenprint/" "gcc-5/" "mysql-common/" "indicator-application/" "console-setup/" "glib-2.0/" "hardening-includes/" "deja-dup/" "dict/" "lightdm/" "hunspell/" "gcr-3/" "rsyslog/" "dns/" "fonts-droid/" "telepathy/" "maven-repo/" "doc-base/" "libvisual-plugins-0.4/" "common-licenses/" "dictionaries-common/" "os-prober/" "foo2qpdl/" "bug/" "desktop-directories/" "backgrounds/" "gnome-background-properties/" "media-player-info/" "aisleriot/" "application-registry/" "gettext/" "snmp/" "javascript/" "farstream/" "libgweather/" "intltool/" "file/" "package-data-downloads/" "gtksourceview-3.0/" "keyrings/" "ppd/" "readline/" "gedit/" "quilt/" "adduser/" "mousetweaks/" "samba/" "mime/" "gnome-documents/" "help/" "alsa-base/" "xml/" "update-manager/" "themes/" "consoletrans/" "icu/" "simple-scan/" "dconf/" "ppp/" "wayland/" "ess/" "rhythmbox/" "gnome/" "gnome-music/" "software-center/" "libreoffice/" "appdata/" "libgphoto2/" "man/" "vino/" "app-install/" "cdbs/" "libthai/" "gconf/" "command-not-found/" "ubuntu-release-upgrader/" "transmission/" "../" "./")
+
+ ("/usr/share/X11/" (22055 46367 0 0) "rgb.txt" "./" "../" "locale/" "XErrorDB" "xman.help" "xorg.conf.d/" "xkb/")
+
+ ("/usr/share/X11/xkb/" (22055 46063 0 0) "geometry/" "./" "../" "compat/" "symbols/" "keycodes/" "rules/" "types/")
+
+ ("/usr/share/X11/xkb/symbols/" (22055 46063 0 0) "jp" "ara" "sy" "al" "ir" "ca" "nl" "sun_vndr/" "uz" "se" "hp_vndr/" "rupeesign" "kr" "altwin" "es" "gb" "sk" "terminate" "kg" "gn" "empty" "gh" "latin" "vn" "./" "ctrl" "dk" "mn" "no" "lv" "pl" "pc" "pt" "cm" "tr" "si" "mao" "ee" "ph" "olpc" "fo" "la" "af" "srvr_ctrl" "nbsp" "../" "bd" "eurosign" "ng" "ua" "in" "ch" "apl" "bg" "kh" "cz" "sony_vndr/" "epo" "md" "nec_vndr/" "tj" "hr" "fujitsu_vndr/" "be" "bw" "il" "at" "br" "pk" "sn" "iq" "am" "latam" "fi" "keypad" "typo" "cd" "mk" "de" "shift" "rs" "az" "eu" "tz" "mt" "gr" "nokia_vndr/" "brai" "kpdl" "group" "ie" "bt" "inet" "by" "np" "lt" "ba" "za" "ru" "digital_vndr/" "ge" "mm" "sgi_vndr/" "ro" "compose" "lk" "it" "ma" "macintosh_vndr/" "tm" "cn" "level3" "th" "hu" "ml" "xfree68_vndr/" "kz" "me" "capslock" "ke" "us" "is" "mv" "et" "tw" "level5" "fr" "sharp_vndr/")
+
+ ("/usr/share/X11/xkb/keycodes/" (22055 46063 0 0) "sun" "empty" "./" "evdev" "ataritt" "olpc" "../" "macintosh" "hp" "sony" "fujitsu" "aliases" "xfree86" "xfree98" "amiga" "digital_vndr/" "sgi_vndr/" "README" "ibm")
+
+ ("/usr/share/X11/xkb/symbols/macintosh_vndr/" (22055 46063 0 0) "jp" "nl" "se" "gb" "./" "dk" "no" "pt" "apple" "../" "ch" "latam" "fi" "de" "it" "us" "is" "fr")
+
+ ("/home/david/.emacs.d/packs/swiss-keyboard/" (22133 31198 873063 860000) "./" "init.el" "../" "info.el" "lib/" "README.md" "config/")
+
+ ("/home/david/.emacs.d/packs/emacs-appearance/config/" (22133 31198 793061 253000) "./" "appearance.el" "../" "yasnippet-conf.el" ".gitkeep")
+
+ ("/home/david/.emacs.d/packs/emacs-appearance/" (22133 31198 793061 253000) "./" "init.el" "../" "info.el" "lib/" "README.md" "config/")
+
+ ("/home/david/.emacs.d/packs/lang-code/config/" (22133 31198 793061 253000) "r-settings.el" "python-settings.el" "chrome-settings.el" "./" "lang-code-settings.el" "../" "flyspell-settings.el" "haml-settings.el" "org-mode-settings.el" "markdown-settings.el" "latex-settings.el" "clojure-settings.el" "cpp-settings.el" ".gitkeep")
+
+ ("/home/david/.emacs.d/packs/lang-code/" (22133 31198 793061 253000) "./" "init.el" "../" "info.el" "lib/" "README.md" "config/")
+
+ ("/home/david/.emacs.d/packs/" (22133 31198 877063 990000) "packages-management/" "./" "stable/" "../" "emacs-appearance/" "update-live-packs" "template/" "lang-code/" "swiss-keyboard/")
 
  ("/home/david/Documents/" (22133 32335 303827 96000) "./" "hello.clj" "../" "bcmwl-kernel-source_6.30.223.248+bdcom-0ubuntu7_amd64.deb" "dkms_2.2.0.3-2ubuntu6_all.deb")
 
  ("/home/david/.lein/" (22133 32455 544021 782000) "profiles.clj" "./" "../" "repl-history" "self-installs/")
-
- ("/home/david/new-ubuntu-config/" (22134 35798 274553 183000) ".git/" "java/" "python/" "git/" "emacs/" "./" "swap_keys/" "TODO.md" "install_make/" "create_makefile.py" ".gitignore" "../" "fonts/" "r_cran/" "Makefile" "timezone/" "finger/" "ruby/" "nodejs/" "clojure/" "README.md" "markdown_livedown/" "LICENSE" "google_drive/" "firewall/" "swap_file/")
-
- ("/home/david/.emacs.d/" (22133 32375 293221 379000) "elpa/" ".git/" "LICENSE.txt" "CHANGELOG.md" "smex-items" "auto/" "manifest.el" "./" "installer/" "user-conf.org" "etc/" ".gitignore" "init.el" "../" "packs/" ".gitmodules" "tmp/" "ido.last" "lib/" "README-Emacs-live.md" "user-conf.el" "README.md")
 
  ("/home/david/.emacs.d/elpa/" (22133 32395 313919 732000) "popup-20151125.542/" "pkg-info-20150517.443/" "gnupg/" "flymake-python-pyflakes-20131127.6/" "markdown-mode+-20120829.510/" "flycheck-20151219.122/" "auto-complete-pcmp-20140226.2251/" "deferred-20151007.1657/" "pos-tip-20150318.813/" "buffer-move-20151106.49/" "yasnippet-20151212.2133/" "company-auctex-readme.txt" "hamlet-mode-20131207.2324/" "websocket-20150719.1048/" "latex-extra-20151116.122/" "edit-server-20141231.1358/" "queue-0.1.1.signed" "./" "zenburn-theme-20151218.1241/" "rainbow-delimiters-20150320.17/" "git-commit-20151111.418/" "dash-20151216.1315/" "python-environment-20150310.153/" "hydra-20151214.417/" "diminish-20151215.915/" "rainbow-mode-0.12/" "log4e-20150105.505/" "bind-key-20150321.213/" "flycheck-google-cpplint-20140806.925/" "markup-faces-20141110.17/" "ecb-20140215.114/" "emmet-mode-20151213.738/" "org-ac-20140302.413/" "async-20151123.256/" "spinner-1.4.signed" "flymake-google-cpplint-20140205.525/" "../" "haskell-mode-20151217.1622/" "ess-20151217.544/" "loop-20130309.805/" "spinner-1.4/" "google-c-style-20140929.1118/" "gmail-message-mode-readme.txt" "auto-complete-c-headers-20150911.2023/" "cider-20151219.4/" "let-alist-1.0.4.signed" "company-quickhelp-20150804.319/" "ctable-20140304.1659/" "yaxception-20150105.652/" "polymode-20151216.533/" "company-auctex-20151102.643/" "jedi-core-20151214.705/" "s-20150924.406/" "seq-20151121.1017/" "epc-20140609.2234/" "ac-html-20151005.31/" "haml-mode-20150508.2011/" "auto-complete-20151211.227/" "web-completion-data-20150623.333/" "projectile-20151217.1352/" "let-alist-1.0.4/" "pandoc-mode-20151030.313/" "zenburn-theme-20151101.1158/" "multiple-cursors-20151205.1225/" "magit-20151220.318/" "edit-server-htmlize-20130329.1548/" "adoc-mode-20151119.914/" "rainbow-mode-0.12.signed" "color-theme-20080305.34/" "with-editor-20151214.505/" "use-package-20151112.1439/" "archives/" "ac-html-bootstrap-20150930.41/" "ht-20150830.1115/" "concurrent-20150309.2052/" "f-20151113.123/" "epl-20150517.433/" "auctex-11.89.signed" "queue-0.1.1/" "julia-mode-20150912.800/" "ac-html-csswatcher-20151208.1313/" "markdown-mode-20151218.2307/" "auctex-11.89/" "clojure-mode-20151213.1038/" "magit-popup-20151220.314/" "ham-mode-20150811.606/" "html-to-markdown-20151105.40/" "flymake-easy-20140818.55/" "yasnippet-bundle-0.6.1/" "company-jedi-readme.txt" "gmail-message-mode-20140815.816/" "htmlize-20130207.1202/" "auto-complete-auctex-20140223.958/" "company-jedi-20151216.1921/" "company-20151208.1341/" "latex-preview-pane-20151023.1303/" "paredit-20150217.713/" "pylint-20150123.1600/" "enlive-readme.txt")
 

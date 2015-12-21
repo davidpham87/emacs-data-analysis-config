@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ eval-buffer
  eshell
+ term
  package-list-packages
  package-install
  company-dabbrev
  company-mode
- company-jedi
- yas-global-mode
 )
 
 ;; ----- smex-data -----
@@ -19,8 +19,8 @@
  (eval-region . 13)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 320)
- (eval-buffer . 61)
+ (eshell . 325)
+ (eval-buffer . 62)
  (lisp-mode . 9)
  (load-theme . 14)
  (ielm . 80)
@@ -64,7 +64,7 @@
  (jedi-mode . 18)
  (org-return . 1)
  (describe-mode . 1)
- (term . 64)
+ (term . 65)
  (rainbow-enable-in-mode . 2)
  (rainbow-mode . 10)
  (global-linum-mode . 1)
