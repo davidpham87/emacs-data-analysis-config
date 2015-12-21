@@ -7,27 +7,29 @@ This org file manage the packages commonly used in my settings.
 * Package initialization
 
 #+BEGIN_SRC emacs-lisp
-  (require 'package)
-  (require 'cl)
-  (package-initialize)
-
-  (when (>= emacs-major-version 24)
     (require 'package)
+    (require 'cl)
     (package-initialize)
-    (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-    (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t))
 
-  ;;; Bootstrap use-package
-  ;; Install use-package if it's not already installed.
-  ;; use-package is used to configure the rest of the packages.
-  (unless (package-installed-p 'use-package)
-    (package-refresh-contents)
-    (package-install 'use-package))
+    (when (>= emacs-major-version 24)
+      (require 'package)
+      (package-initialize)
+      (setq package-archives
+            '(("gnu" . "https://elpa.gnu.org/packages/")
+              ("melpa" . "https://melpa.milkbox.net/packages/")
+              ("marmalade" . "https://marmalade-repo.org/packages/"))))
 
-  (eval-when-compile
-    (require 'use-package))
-  (require 'diminish)                ;; if you use :diminish
-  (require 'bind-key)
+    ;; Bootstrap use-package
+    ;; Install use-package if it's not already installed.
+    ;; use-package is used to configure the rest of the packages.
+    (unless (package-installed-p 'use-package)
+      (package-refresh-contents)
+      (package-install 'use-package))
+
+    (eval-when-compile
+      (require 'use-package))
+    (require 'diminish)                ;; if you use :diminish
+    (require 'bind-key)
 #+END_SRC
 
 ** Autocomplete/Company packages
