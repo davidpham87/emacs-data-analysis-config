@@ -30,3 +30,4 @@ url/
 url/cookies
 packs/stable/power-pack/*/yasnippet*
 packs/stable/org-pack/*
+elpa/*.txt

@@ -46,7 +46,6 @@ I quite dislike emacs-live default color-theme. The following remove all the und
 #+END_SRC
 
 * Default application
-
 #+BEGIN_SRC emacs-lisp
   (setq dired-guess-shell-alist-user
           '(("\\.pdf$" "evince")

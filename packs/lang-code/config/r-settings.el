@@ -29,7 +29,7 @@
     (call-interactively 'ess-eval-line-and-step)))
 
 (add-hook 'ess-mode-hook
-          '(lambda()
+          '(lambda ()
              (local-set-key (kbd "<C-dead-circumflex>") 'my-ess-eval)
              (setq ess-indent-level 2)
              (rainbow-mode t)
@@ -38,7 +38,7 @@
              (rainbow-delimiters-mode t)))
 
 (add-hook 'inferior-ess-mode-hook
-          '(lambda()
+          '(lambda ()
              (local-set-key [C-up] 'comint-previous-input)
              (local-set-key [C-down] 'comint-next-input)
              (rainbow-mode t)

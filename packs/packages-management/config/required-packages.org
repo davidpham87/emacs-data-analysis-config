@@ -139,6 +139,21 @@ Cider is the best mode in emacs for coding in Clojure. The other emacs packages 
     "A list of packages to ensure are installed at launch.")
 #+END_SRC
 
+** Helm
+   Helm is better IDO.
+
+   #+BEGIN_SRC emacs-lisp
+     (defvar helm-pckgs
+       '(helm
+         helm-ispell
+         cljr-helm
+         helm-R
+         helm-bibtex
+         helm-flycheck
+         helm-company)
+       "Helm packages")
+   #+END_SRC
+
 ** Python modes
 
 #+BEGIN_SRC emacs-lisp
@@ -158,7 +173,7 @@ Gather the packages and ensure that they are installed.
 #+BEGIN_SRC emacs-lisp
   (defvar my-packages
     (append ac-pckgs color-pckgs clojure-pckgs elisp-pckgs fly-pckgs
-            markup-pckgs other-pckgs python-pckgs)
+            markup-pckgs other-pckgs python-pckgs helm-pckgs)
     "A list of packages to ensure are installed at launch.")
 
   (defun my-packages-installed-p ()

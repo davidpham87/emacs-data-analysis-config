@@ -5,3 +5,4 @@
 
 ;; Load bindings config
 (live-load-config-file "appearance.el")
+(live-load-config-file "helm-settings.el")

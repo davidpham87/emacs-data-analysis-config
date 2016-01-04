@@ -103,6 +103,16 @@
     )
   "A list of packages to ensure are installed at launch.")
 
+(defvar helm-pckgs
+  '(helm
+    helm-ispell
+    cljr-helm
+    helm-R
+    helm-bibtex
+    helm-flycheck
+    helm-company)
+  "Helm packages")
+
 (defvar python-pckgs
   '(company-jedi                        ; Python auto-completion in Emacs based on company
     jedi-core                           ; elisp code for jedi
@@ -113,7 +123,7 @@
 
 (defvar my-packages
   (append ac-pckgs color-pckgs clojure-pckgs elisp-pckgs fly-pckgs
-          markup-pckgs other-pckgs python-pckgs)
+          markup-pckgs other-pckgs python-pckgs helm-pckgs)
   "A list of packages to ensure are installed at launch.")
 
 (defun my-packages-installed-p ()
