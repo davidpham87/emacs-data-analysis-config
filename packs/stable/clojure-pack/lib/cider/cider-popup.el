@@ -1,6 +1,6 @@
 ;;; cider-popup.el --- Creating and quitting popup buffers  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2015  Artur Malabarba
+;; Copyright © 2015-2016  Bozhidar Batsov, Artur Malabarba and CIDER contributors
 
 ;; Author: Artur Malabarba <bruce.connor.am@gmail.com>
 
@@ -17,9 +17,12 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Commentary:
+
+;; Common functionality for dealing with popup buffers.
+
 ;;; Code:
 
-(require 'nrepl-client)
 (require 'cider-compat)
 
 (define-minor-mode cider-popup-buffer-mode
@@ -49,7 +52,7 @@ and automatically removed when killed."
 (defun cider-popup-buffer-display (buffer &optional select)
   "Display BUFFER.
 If SELECT is non-nil, select the BUFFER."
-  (let ((window (get-buffer-window buffer)))
+  (let ((window (get-buffer-window buffer 'visible)))
     (when window
       (with-current-buffer buffer
         (set-window-point window (point))))
@@ -61,20 +64,23 @@ If SELECT is non-nil, select the BUFFER."
     ;; bound to that).
     (unless (eq window (selected-window))
       ;; Non nil `inhibit-same-window' ensures that current window is not covered
-      (if select
-          (pop-to-buffer buffer `(nil . ((inhibit-same-window . ,pop-up-windows))))
-        (display-buffer buffer `(nil . ((inhibit-same-window . ,pop-up-windows)))))))
+      ;; Non nil `inhibit-switch-frame' ensures that the other frame is not selected
+      ;; if that's where the buffer is being shown.
+      (funcall (if select #'pop-to-buffer #'display-buffer)
+               buffer `(nil . ((inhibit-same-window . ,pop-up-windows)
+                               (reusable-frames . visible))))))
   buffer)
 
 (defun cider-popup-buffer-quit (&optional kill)
-  "Quit the current (temp) window and bury its buffer using `quit-restore-window'.
+  "Quit the current (temp) window.
+Bury its buffer using `quit-restore-window'.
 If prefix argument KILL is non-nil, kill the buffer instead of burying it."
   (interactive)
   (quit-restore-window (selected-window) (if kill 'kill 'append)))
 
 (defvar-local cider-popup-output-marker nil)
 
-(defvar cider-ancillary-buffers (list nrepl-message-buffer-name))
+(defvar cider-ancillary-buffers nil)
 
 (defun cider-make-popup-buffer (name &optional mode ancillary)
   "Create a temporary buffer called NAME using major MODE (if specified).
@@ -97,8 +103,8 @@ and automatically removed when killed."
     (current-buffer)))
 
 (defun cider-emit-into-popup-buffer (buffer value &optional face)
-  "Emit into BUFFER the provided VALUE."
-  ;; Long string output renders emacs unresponsive and users might intentionally
+  "Emit into BUFFER the provided VALUE optionally using FACE."
+  ;; Long string output renders Emacs unresponsive and users might intentionally
   ;; kill the frozen popup buffer. Therefore, we don't re-create the buffer and
   ;; silently ignore the output.
   (when (buffer-live-p buffer)
@@ -119,4 +125,5 @@ and automatically removed when killed."
         (when moving (goto-char cider-popup-output-marker))))))
 
 (provide 'cider-popup)
+
 ;;; cider-popup.el ends here

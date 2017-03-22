@@ -1,3 +1,10 @@
+(live-add-pack-lib "swiper")
+(require 'swiper)
+
+(live-add-pack-lib "with-editor")
+
+(require 'queue)
+(require 'seq)
 (live-add-pack-lib "dash")
 (require 'dash)
 
@@ -18,11 +25,14 @@
 (live-add-pack-lib "pkg-info")
 (require 'pkg-info)
 
+
+(live-add-pack-lib "hydra")
+
 (live-load-config-file "backup-dir-conf.el")
 (live-load-config-file "util-fns.el")
 (live-load-config-file "built-in.el")
 (live-load-config-file "cosmetic.el")
-;; (live-load-config-file "ido-conf.el")
+(live-load-config-file "ido-conf.el")
 (live-load-config-file "smex-conf.el")
 (live-load-config-file "tramp-conf.el")
 (live-load-config-file "mouse-conf.el")

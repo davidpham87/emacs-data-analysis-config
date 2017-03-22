@@ -1,0 +1,51 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/david/.emacs.d/packs/lang-code/" . "config/")
+ ("/home/david/" . ".emacs.d/")
+ ("/home/david/.emacs.d/packs/stable/power-pack/" . "config/")
+ ("/home/david/.emacs.d/packs/stable/" . "power-pack/")
+ ("/home/david/.emacs.d/packs/" . "lang-code/")
+ ("/home/david/.emacs.d/" . "packs/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/david/.emacs.d/packs/stable/power-pack/config/"
+ "/home/david/.emacs.d/packs/stable/power-pack/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "yasnippet-conf.el"
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/david/.emacs.d/packs/lang-code/config/" (22738 30704 125615 24000) "clojure-settings.el" "lang-code-settings.el" "cpp-settings.el" "python-settings.el" "org-mode-settings.el" "markdown-settings.el" "haml-settings.el" ".gitkeep" "../" "latex-settings.el" "flyspell-settings.el" "r-settings.el" "./" "chrome-settings.el")
+
+ ("/home/david/.emacs.d/packs/lang-code/" (22738 30704 129614 978000) "config/" "lib/" "info.el" "README.md" "../" "init.el" "./")
+
+ ("/home/david/" (22738 31974 868819 217000) "Videos/" ".bashrc" ".config/" "Downloads/" ".adobe/" "Pictures/" ".mozilla/" ".gnupg/" ".cache/" ".emacs.d/" ".local/" "Public/" "Templates/" ".bash_history" ".emacs-live.el" ".profile" "Documents/" ".wget-hsts" "Music/" ".bash_logout" "../" "Desktop/" ".pki/" ".ssh/" "new-ubuntu-config/" ".ICEauthority" ".gconf/" ".sudo_as_admin_successful" ".gnome/" "./" ".fonts/" ".gitconfig")
+
+ ("/home/david/.emacs.d/" (22738 33111 356799 611000) "manifest.el" "packs/" "installer/" "eshell/" "lib/" "CHANGELOG.md" "LICENSE.txt" ".git/" "README.md" ".emacs-live.el" ".gitignore" "user-conf.org" "abbrev_defs" "elpa/" "ido.last" "auto/" "user-conf.el" "../" "tmp/" "README-Emacs-live.md" ".gitmodules" "etc/" "init.el" "smex-items" "./")
+
+ ("/home/david/.emacs.d/elpa/" (22738 33123 32634 667000) "jedi-core-20170121.610/" "company-quickhelp-20170226.522/" "zenburn-theme-20151101.1158/" "dash-2.12.0/" "flymake-easy-20140818.55/" "helm-core-20170322.258/" "pandoc-mode-20161104.1521/" "parsebib-20170317.706/" "projectile-20170309.30/" "epl-20150517.433/" "yaxception-20150105.652/" "let-alist-1.0.5/" "company-jedi-20151216.1921/" "pylint-20160728.1033/" "htmlize-20161211.1019/" "web-completion-data-20160318.148/" "helm-20170322.258/" "flymake-google-cpplint-20140205.525/" "spinner-1.7.3/" "peg-20150707.2341/" "helm-bibtex-20170321.1306/" "biblio-core-20160901.1115/" "html-to-markdown-20151105.40/" "f-20161002.800/" "tablist-20170219.1935/" "python-environment-20150310.153/" "use-package-20170319.12/" "ac-html-bootstrap-20160302.901/" "concurrent-20161228.1930/" "pdf-tools-20170317.810/" "websocket-20161113.1736/" "pkg-info-20150517.443/" "paredit-20160615.1325/" "gmail-message-mode-readme.txt" "pos-tip-20150318.813/" "ctable-20140304.1659/" "flycheck-google-cpplint-20140806.925/" "ac-html-csswatcher-20151208.1313/" "polymode-20170307.322/" "gnupg/" "hamlet-mode-20131207.2324/" "magit-20170320.1936/" "epc-20140609.2234/" "yasnippet-20170310.1724/" "emmet-mode-20161113.2158/" "company-20170315.1754/" "git-commit-2.4.1/" "auto-complete-20170124.1845/" "haml-mode-20170208.28/" "latex-preview-pane-20151023.1303/" "s-20160928.636/" "helm-R-20120819.1714/" "ac-html-20151005.31/" "diminish-20151215.915/" "multiple-cursors-20170215.552/" "flycheck-20170322.302/" "ecb-20160101.933/" "google-c-style-20140929.1118/" "helm-ispell-20151231.53/" "hydra-20170108.148/" "markup-faces-20141110.17/" "popup-20160709.729/" "edn-20160215.419/" "deferred-20161228.1930/" "color-theme-20080305.34/" "ess-20170227.802/" "julia-mode-20170210.1504/" "helm-company-20170306.2113/" "archives/" "async-1.9/" "enlive-readme.txt" "auto-complete-pcmp-20140226.2251/" "clj-refactor-20170126.118/" "company-auctex-20161025.24/" "spinner-1.7.3.signed" "queue-0.1.1.signed" "biblio-20161014.1604/" "edit-server-20141231.1358/" "buffer-move-20160615.1103/" "with-editor-20170111.609/" "cljr-helm-20160913.128/" "auctex-11.90.0/" "rainbow-mode-0.12/" "ht-20161015.1945/" "auto-complete-auctex-20140223.958/" "inflections-20161126.1727/" "cider-20170322.155/" "markdown-mode-20170317.1202/" "log4e-20150105.505/" "dash-2.12.0.signed" "ham-mode-20150811.606/" "let-alist-1.0.5.signed" "markdown-mode+-20170320.1404/" "async-1.9.signed" "dash-20170207.2056/" "auto-complete-c-headers-20150911.2023/" "haskell-mode-20170228.730/" "company-auctex-readme.txt" "auctex-11.90.0.signed" "seq-20151121.1017/" "org-ac-20140302.413/" "bind-key-20161218.1520/" "adoc-mode-20160314.1430/" "clojure-mode-20170303.2310/" "rainbow-mode-0.12.signed" "magit-popup-20170308.146/" "helm-flycheck-20160710.129/" "flymake-python-pyflakes-20131127.6/" "gmail-message-mode-20160627.1147/" "loop-20160813.707/" "rainbow-delimiters-20160430.2358/" "queue-0.1.1/" "company-jedi-readme.txt" "edit-server-htmlize-20130329.1548/" "latex-extra-20160328.1721/" "../" "./")
+
+ ("/home/david/.emacs.d/packs/stable/power-pack/config/" (22738 31472 571829 818000) "undo-tree-conf.el" "git-gutter-conf.el" "expand-region-conf.el" "refheap-conf.el" "volatile-highlights-conf.el" "wc-mode-conf.el" "browse-kill-ring-conf.el" "scratch-conf.el" "highlight-tail-conf.el" "../" "ace-jump-mode-conf.el" "gist-conf.el" "multiple-cursors-conf.el" "quick-jump-conf.el" "./" "floobits-conf.el" "yasnippet-conf.el")
+
+ ("/home/david/.emacs.d/packs/packages-management/" (22738 30704 129614 978000) "config/" "lib/" "info.el" "README.md" "../" "init.el" "./")
+
+ ("/home/david/.emacs.d/packs/stable/power-pack/" (22738 30704 173614 479000) "config/" "lib/" "info.el" "../" "init.el" "./")
+
+ ("/home/david/.emacs.d/packs/stable/" (22738 31366 593275 813000) "clojure-pack/" "colour-pack/" "bindings-pack/" "foundation-pack/" "git-pack/" "lang-pack/" "../" "power-pack/" "./")
+
+ ("/home/david/.emacs.d/packs/" (22738 30704 181614 388000) "emacs-appearance/" "update-live-packs" "swiss-keyboard/" "stable/" "../" "packages-management/" "lang-code/" "template/" "./")
+
+ ("/home/david/.emacs.d/lib/" (22738 30704 125615 24000) "live-core.el" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

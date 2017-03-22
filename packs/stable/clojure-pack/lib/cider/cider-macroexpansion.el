@@ -1,11 +1,12 @@
 ;;; cider-macroexpansion.el --- Macro expansion support -*- lexical-binding: t -*-
 
-;; Copyright © 2012-2015 Tim King, Phil Hagelberg
-;; Copyright © 2013-2015 Bozhidar Batsov, Hugo Duncan, Steve Purcell
+;; Copyright © 2012-2013 Tim King, Phil Hagelberg, Bozhidar Batsov
+;; Copyright © 2013-2016 Bozhidar Batsov, Artur Malabarba and CIDER contributors
 ;;
 ;; Author: Tim King <kingtim@gmail.com>
 ;;         Phil Hagelberg <technomancy@gmail.com>
 ;;         Bozhidar Batsov <bozhidar@batsov.com>
+;;         Artur Malabarba <bruce.connor.am@gmail.com>
 ;;         Hugo Duncan <hugo@hugoduncan.org>
 ;;         Steve Purcell <steve@sanityinc.com>
 
@@ -108,29 +109,29 @@ This variable specifies both what was expanded and the expander.")
 
 ;;;###autoload
 (defun cider-macroexpand-1 (&optional prefix)
-  "Invoke 'macroexpand-1' on the expression preceding point.
-If invoked with a PREFIX argument, use 'macroexpand' instead of
-'macroexpand-1'."
+  "Invoke \\=`macroexpand-1\\=` on the expression preceding point.
+If invoked with a PREFIX argument, use \\=`macroexpand\\=` instead of
+\\=`macroexpand-1\\=`."
   (interactive "P")
   (let ((expander (if prefix "macroexpand" "macroexpand-1")))
     (cider-macroexpand-expr expander (cider-last-sexp))))
 
 (defun cider-macroexpand-1-inplace (&optional prefix)
-  "Perform inplace 'macroexpand-1' on the expression preceding point.
-If invoked with a PREFIX argument, use 'macroexpand' instead of
-'macroexpand-1'."
+  "Perform inplace \\=`macroexpand-1\\=` on the expression preceding point.
+If invoked with a PREFIX argument, use \\=`macroexpand\\=` instead of
+\\=`macroexpand-1\\=`."
   (interactive "P")
   (let ((expander (if prefix "macroexpand" "macroexpand-1")))
     (cider-macroexpand-expr-inplace expander)))
 
 ;;;###autoload
 (defun cider-macroexpand-all ()
-  "Invoke 'clojure.walk/macroexpand-all' on the expression preceding point."
+  "Invoke \\=`clojure.walk/macroexpand-all\\=` on the expression preceding point."
   (interactive)
   (cider-macroexpand-expr "macroexpand-all" (cider-last-sexp)))
 
 (defun cider-macroexpand-all-inplace ()
-  "Perform inplace 'clojure.walk/macroexpand-all' on the expression preceding point."
+  "Perform inplace \\=`clojure.walk/macroexpand-all\\=` on the expression preceding point."
   (interactive)
   (cider-macroexpand-expr-inplace "macroexpand-all"))
 
@@ -176,23 +177,21 @@ and point is placed after the expanded form."
     (define-key map (kbd "d") #'cider-doc)
     (define-key map (kbd "j") #'cider-javadoc)
     (define-key map (kbd ".") #'cider-find-var)
+    (define-key map (kbd "m") #'cider-macroexpand-1-inplace)
+    (define-key map (kbd "a") #'cider-macroexpand-all-inplace)
+    (define-key map (kbd "u") #'cider-macroexpand-undo)
+    (define-key map [remap undo] #'cider-macroexpand-undo)
     (easy-menu-define cider-macroexpansion-mode-menu map
       "Menu for CIDER's doc mode"
       '("Macroexpansion"
         ["Restart expansion" cider-macroexpand-again]
         ["Macroexpand-1" cider-macroexpand-1-inplace]
         ["Macroexpand-all" cider-macroexpand-all-inplace]
+        ["Macroexpand-undo" cider-macroexpand-undo]
         ["Go to source" cider-find-var]
         ["Go to doc" cider-doc]
         ["Go to Javadoc" cider-docview-javadoc]
         ["Quit" cider-popup-buffer-quit-function]))
-    (cl-labels ((redefine-key (from to)
-                              (dolist (mapping (where-is-internal from cider-mode-map))
-                                (define-key map mapping to))))
-      (redefine-key 'cider-macroexpand-1 #'cider-macroexpand-1-inplace)
-      (redefine-key 'cider-macroexpand-all #'cider-macroexpand-all-inplace)
-      (redefine-key 'advertised-undo #'cider-macroexpand-undo)
-      (redefine-key 'undo #'cider-macroexpand-undo))
     map))
 
 (define-minor-mode cider-macroexpansion-mode

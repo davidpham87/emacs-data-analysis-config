@@ -1,11 +1,12 @@
 ;;; cider-selector.el --- Buffer selection command inspired by SLIME's selector -*- lexical-binding: t -*-
 
-;; Copyright © 2012-2015 Tim King, Phil Hagelberg
-;; Copyright © 2013-2015 Bozhidar Batsov, Hugo Duncan, Steve Purcell
+;; Copyright © 2012-2013 Tim King, Phil Hagelberg, Bozhidar Batsov
+;; Copyright © 2013-2016 Bozhidar Batsov, Artur Malabarba and CIDER contributors
 ;;
 ;; Author: Tim King <kingtim@gmail.com>
 ;;         Phil Hagelberg <technomancy@gmail.com>
 ;;         Bozhidar Batsov <bozhidar@batsov.com>
+;;         Artur Malabarba <bruce.connor.am@gmail.com>
 ;;         Hugo Duncan <hugo@hugoduncan.org>
 ;;         Steve Purcell <steve@sanityinc.com>
 
@@ -32,8 +33,9 @@
 
 (require 'cider-client)
 (require 'cider-interaction)
+(require 'cider-scratch)
 
-(defconst cider-selector-help-buffer "*Selector Help*"
+(defconst cider-selector-help-buffer "*CIDER Selector Help*"
   "The name of the selector's help buffer.")
 
 (defvar cider-selector-methods nil
@@ -45,10 +47,12 @@ DESCRIPTION is a one-line description of what the key selects.")
   "If non-nil use `switch-to-buffer-other-window'.")
 
 (defun cider--recently-visited-buffer (mode)
-  "Return the most recently visited buffer whose `major-mode' is MODE.
+  "Return the most recently visited buffer, deriving its `major-mode' from MODE.
 Only considers buffers that are not already visible."
   (cl-loop for buffer in (buffer-list)
-           when (and (with-current-buffer buffer (eq major-mode mode))
+           when (and (with-current-buffer buffer
+                       (derived-mode-p mode))
+                     ;; names starting with space are considered hidden by Emacs
                      (not (string-match-p "^ " (buffer-name buffer)))
                      (null (get-buffer-window buffer 'visible)))
            return buffer
@@ -142,12 +146,21 @@ is chosen.  The returned buffer is selected with
   cider--connection-browser-buffer-name)
 
 (def-cider-selector-method ?m
-  "*nrepl-messages* buffer."
-  nrepl-message-buffer-name)
+  "Current connection's *nrepl-messages* buffer."
+  (cider-current-messages-buffer))
 
 (def-cider-selector-method ?x
   "*cider-error* buffer."
   cider-error-buffer)
+
+(def-cider-selector-method ?d
+  "*cider-doc* buffer."
+  cider-doc-buffer)
+
+(declare-function cider-find-or-create-scratch-buffer "cider-scratch")
+(def-cider-selector-method ?s
+  "*cider-scratch* buffer."
+  (cider-find-or-create-scratch-buffer))
 
 (provide 'cider-selector)
 

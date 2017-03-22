@@ -1,30 +1,30 @@
 
 ;; ----- smex-history -----
 (
+ eshell
+ package-list-packages
+ eval-region
+ eval-buffer
+ package-install
  ido-mode
  helm-M-x
- cider-turn-on-eldoc-mode
- find-grep
- helm-mode
- package-list-packages
- package-install
 )
 
 ;; ----- smex-data -----
 (
  (color-theme-gandalf . 2)
- (package-list-packages . 36)
+ (package-list-packages . 38)
  (color-theme-cyberpunk . 2)
  (menu-bar-mode . 4)
- (eval-region . 13)
+ (eval-region . 14)
  (tar-mode . 1)
  (goto-address-mode . 1)
- (eshell . 384)
- (eval-buffer . 61)
+ (eshell . 385)
+ (eval-buffer . 62)
  (lisp-mode . 9)
  (load-theme . 14)
  (ielm . 83)
- (package-install . 35)
+ (package-install . 36)
  (set-background-color . 1)
  (set-cursor-color . 1)
  (forward-sentence . 1)
