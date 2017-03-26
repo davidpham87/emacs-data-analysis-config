@@ -2,7 +2,7 @@
 ;;; found online.
 (setq
  python-shell-interpreter "ipython3"
- python-shell-interpreter-args "--pylab"
+ python-shell-interpreter-args "--pylab --simple-prompt -i"
  python-shell-prompt-regexp "In \\[[0-9]+\\]: "
  python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
  python-shell-completion-setup-code
@@ -29,7 +29,7 @@
             (add-to-list 'company-backends 'company-jedi)))
 (setq jedi:complete-on-dot t)
 (setq jedi:environment-virtualenv
-      (list "virtualenv3" "--system-site-packages")) ; Python3
+      (list "virtualenv" "--system-site-packages")) ; Python3
 
 (require 'flymake-python-pyflakes)
 ;; Python Hook, set indent to 4, and pyflakes
